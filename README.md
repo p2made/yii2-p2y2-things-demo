@@ -1,4 +1,4 @@
-P2Y2Things Demo v0.9.0
+P2Y2Things Demo v0.9.2
 ======================
 
 A set of pages to demonstrate [`p2made/yii2-p2y2-things`](https://github.com/p2made/yii2-p2y2-things), bundled as a theme.

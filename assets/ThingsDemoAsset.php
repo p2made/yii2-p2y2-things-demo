@@ -4,7 +4,7 @@
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
- * @package p2made/yii2-asset-demo-theme
+ * @package p2made/yii2-p2y2-things-demo
  * @license MIT
  */
 
@@ -19,10 +19,5 @@ class ThingsDemoAsset extends \yii\web\AssetBundle
 	];
 
 	public $depends = [
-		'p2made\assets\JqueryAsset',
-		'p2made\assets\BootstrapAsset',
-		'p2made\assets\BootstrapPluginAsset',
-		'p2made\assets\FontAwesomeAsset',
-		'p2made\assets\JuiAsset',
 	];
 }

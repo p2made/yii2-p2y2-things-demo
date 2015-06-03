@@ -4,21 +4,32 @@
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
- * @package p2made/yii2-asset-demo-theme
+ * @package p2made/yii2-p2y2-things-demo
  * @license MIT
  */
 
 use yii\helpers\Html;
 
+// load assets...
+p2made\assets\JqueryAsset::register($this);
+p2made\assets\BootstrapAsset::register($this);
+p2made\assets\BootstrapPluginAsset::register($this);
+p2made\assets\FontAwesomeAsset::register($this);
+p2made\assets\JuiAsset::register($this);
+
+p2made\demo\Things\assets\ThingsDemoAsset::register($this);
+p2made\assets\SweetAlertAsset::register($this);
+
+p2made\assets\Html5shivAsset::register($this);
+p2made\assets\PrintShivAsset::register($this);
+
+// DEMO ONLY _DON'T_ use this in your production copy.
+p2made\demo\Things\demo\SweetAlertDemoAsset::register($this);
+
 /* @var $this yii\web\View */
 
 $this->title = 'Notifications';
 $this->params['breadcrumbs'][] = $this->title;
-
-// load assets...
-p2made\demo\Things\assets\ThingsDemoAsset::register($this);
-p2made\assets\SweetAlertAsset::register($this);
-p2made\demo\Things\demo\SweetAlertDemoAsset::register($this);
 ?>
 <div id="content-wrapper">
 	<div class="row">
