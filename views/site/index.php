@@ -9,6 +9,7 @@
  */
 
 use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
 
 // load assets...
@@ -29,7 +30,7 @@ p2made\assets\PrintShivAsset::register($this);
 p2made\demo\Things\demo\MorrisDemoAsset::register($this);
 
 /* @var $this yii\web\View */
-$this->title = 'Dashboard';
+$this->title = 'P2Y2Things';
 //$this->title = 'My Yii Application';
 
 /*
@@ -42,8 +43,11 @@ p2made\assets\AnimateAsset::register($this);
 p2made\assets\BootstrapAsset::register($this);
 p2made\assets\BootstrapPluginAsset::register($this);
 p2made\assets\BootstrapSocialAsset::register($this);
+p2made\assets\BootstrapSweetalertAsset::register($this);
+p2made\assets\BootstrapSwitchAsset::register($this);
 p2made\assets\DataTablesAsset::register($this);
 p2made\assets\ExcanvasAsset::register($this);
+p2made\assets\FlagIconCssAsset::register($this);
 p2made\assets\FitvidsAsset::register($this);
 p2made\assets\FlotChartsAsset::register($this);
 p2made\assets\FontAwesomeAsset::register($this);
@@ -61,7 +65,6 @@ p2made\assets\MomentAsset::register($this);
 p2made\assets\MomentTimezoneAsset::register($this);
 p2made\assets\MorrisAsset::register($this);
 p2made\assets\PrettyPhotoAsset::register($this);
-p2made\assets\PrettySociableAsset::register($this);
 p2made\assets\RaphaelAsset::register($this);
 p2made\assets\SweetAlertAsset::register($this);
 p2made\assets\TimelineAsset::register($this);
@@ -69,48 +72,12 @@ p2made\assets\WowAsset::register($this);
 
 p2made\assets\Html5shivAsset::register($this);
 p2made\assets\PrintShivAsset::register($this);
-
-		'p2made\assets\AnimateAsset',
-		'p2made\assets\BootstrapAsset',
-		'p2made\assets\BootstrapPluginAsset',
-		'p2made\assets\BootstrapSocialAsset',
-		'p2made\assets\DataTablesAsset',
-		'p2made\assets\ExcanvasAsset',
-		'p2made\assets\FitvidsAsset',
-		'p2made\assets\FlotChartsAsset',
-		'p2made\assets\FontAwesomeAsset',
-		'p2made\assets\FullCalendarAsset',
-		'p2made\assets\GMapsAsset',
-		'p2made\assets\HolderAsset',
-		'p2made\assets\IsotopeAsset',
-		'p2made\assets\JqueryAsset',
-		'p2made\assets\JqueryCountToAsset',
-		'p2made\assets\JqueryMigrateAsset',
-		'p2made\assets\JuiAsset',
-		'p2made\assets\MasonryAsset',
-		'p2made\assets\MetisMenuAsset',
-		'p2made\assets\MomentAsset',
-		'p2made\assets\MomentTimezoneAsset',
-		'p2made\assets\MorrisAsset',
-		'p2made\assets\PrettyPhotoAsset',
-		'p2made\assets\PrettySociableAsset',
-		'p2made\assets\RaphaelAsset',
-		'p2made\assets\SweetAlertAsset',
-		'p2made\assets\TimelineAsset',
-		'p2made\assets\WowAsset',
-
-		'p2made\assets\Html5shivAsset',
-		'p2made\assets\PrintShivAsset',
  */
 ?>
 <div class="site-index">
 
 	<div class="jumbotron">
-		<h1>Congratulations!</h1>
-
-		<p class="lead">You have successfully created your Yii-powered application.</p>
-
-		<p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+		<h1><?= Html::encode($this->title) ?>!</h1>
 	</div>
 
 	<div class="row">
@@ -616,61 +583,38 @@ p2made\assets\PrintShivAsset::register($this);
 					</div>
 				</div><!-- /.panel-footer -->
 			</div><!-- /.panel .chat-panel -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<i class="fa fa-arrow-circle-o-right fa-fw"></i> Aliases
+				</div>
+				<div class="panel-body">
+
+					<dl>
+						<dt><code><?= Yii::getAlias('@yii'); ?></code></dt>
+						<dd>@yii, the directory where the BaseYii.php file is located (also called the framework directory).</dd>
+						<dt><code><?= Yii::getAlias('@app'); ?></code></dt>
+						<dd>@app, the base path of the currently running application.</dd>
+						<dt><code><?= Yii::getAlias('@runtime'); ?></code></dt>
+						<dd>@runtime, the runtime path of the currently running application. Defaults to @app/runtime.</dd>
+						<dt><code><?= Yii::getAlias('@webroot'); ?></code></dt>
+						<dd>@webroot, the Web root directory of the currently running Web application. It is determined based on the directory containing the entry script.</dd>
+						<dt><code><a href="<?= Yii::getAlias('@web'); ?>">@web</a></code></dt>
+						<dd>@web, the base URL of the currently running Web application. It has the same value as yii\web\Request::$baseUrl.</dd>
+						<dt><code><?= Yii::getAlias('@vendor'); ?></code></dt>
+						<dd>@vendor, the Composer vendor directory. Defaults to @app/vendor.</dd>
+						<dt><code><?= Yii::getAlias('@bower'); ?></code></dt>
+						<dd>@bower, the root directory that contains bower packages. Defaults to @vendor/bower.</dd>
+						<dt><code><?= Yii::getAlias('@npm'); ?></code></dt>
+						<dd>@npm, the root directory that contains npm packages. Defaults to @vendor/npm.</dd>
+
+						<dt><code><?= Yii::getAlias('@backend'); ?></code></dt>
+						<dd>@backend</dd>
+						<dt><code><?= Yii::getAlias('@frontend'); ?></code></dt>
+						<dd>@frontend</dd>
+					</dl>
+
+				</div><!-- /.panel-body -->
+			</div><!-- /.panel -->
 		</div><!-- /.col-lg-4 -->
 	</div><!-- /.row -->
-
-	<div class="body-content">
-
-		<div class="row">
-			<div class="col-lg-4">
-				<h2>Aliases</h2>
-
-				<dl>
-					<dt><code><?= Yii::getAlias('@yii'); ?></code></dt>
-					<dd>@yii, the directory where the BaseYii.php file is located (also called the framework directory).</dd>
-					<dt><code><?= Yii::getAlias('@app'); ?></code></dt>
-					<dd>@app, the base path of the currently running application.</dd>
-					<dt><code><?= Yii::getAlias('@runtime'); ?></code></dt>
-					<dd>@runtime, the runtime path of the currently running application. Defaults to @app/runtime.</dd>
-					<dt><code><?= Yii::getAlias('@webroot'); ?></code></dt>
-					<dd>@webroot, the Web root directory of the currently running Web application. It is determined based on the directory containing the entry script.</dd>
-					<dt><code><a href="<?= Yii::getAlias('@web'); ?>">@web</a></code></dt>
-					<dd>@web, the base URL of the currently running Web application. It has the same value as yii\web\Request::$baseUrl.</dd>
-					<dt><code><?= Yii::getAlias('@vendor'); ?></code></dt>
-					<dd>@vendor, the Composer vendor directory. Defaults to @app/vendor.</dd>
-					<dt><code><?= Yii::getAlias('@bower'); ?></code></dt>
-					<dd>@bower, the root directory that contains bower packages. Defaults to @vendor/bower.</dd>
-					<dt><code><?= Yii::getAlias('@npm'); ?></code></dt>
-					<dd>@npm, the root directory that contains npm packages. Defaults to @vendor/npm.</dd>
-
-					<dt><code><?= Yii::getAlias('@backend'); ?></code></dt>
-					<dd>@backend</dd>
-					<dt><code><?= Yii::getAlias('@frontend'); ?></code></dt>
-					<dd>@frontend</dd>
-				</dl>
-
-			</div>
-			<div class="col-lg-4">
-				<h2>Heading</h2>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-					fugiat nulla pariatur.</p>
-
-				<p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-			</div>
-			<div class="col-lg-4">
-				<h2>Heading</h2>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-					fugiat nulla pariatur.</p>
-
-				<p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-			</div>
-		</div>
-
-	</div>
 </div><!-- /#content-wrapper -->

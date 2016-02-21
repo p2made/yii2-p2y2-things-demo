@@ -9,6 +9,7 @@
  */
 
 use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
 
 // load assets...
 p2made\assets\JqueryAsset::register($this);
@@ -101,13 +102,28 @@ p2made\assets\PrintShivAsset::register($this);
 
 	<div class="jumbotron">
 		<h1>UUIDs!</h1>
+		<h2>Los &amp; lots of UUIDs.</h2>
 	</div>
 
 	<div class="body-content">
 
 		<div class="row">
+		</div>
+		<div class="row">
+			<div class="col-lg-2"></div>
 			<div class="col-lg-4">
+				<h4>Using no subdomain.</h4>
 				<ul>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
 					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
 					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
 					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
@@ -126,43 +142,39 @@ p2made\assets\PrintShivAsset::register($this);
 				</ul>
 			</div>
 			<div class="col-lg-4">
+				<h4>Using subdomain com.example.</h4>
 				<ul>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
+					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
 				</ul>
 			</div>
-			<div class="col-lg-4">
-				<ul>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
-				</ul>
-			</div>
+		</div>
+		<div class="row">
+		</div>
+		<div class="row">
 		</div>
 
 	</div>

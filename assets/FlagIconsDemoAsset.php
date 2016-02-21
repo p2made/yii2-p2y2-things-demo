@@ -1,6 +1,6 @@
 <?php
 /**
- * ThingsDemoAsset.php
+ * FlagIconsDemoAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -10,13 +10,12 @@
 
 namespace p2made\demo\Things\assets;
 
-class ThingsDemoAsset extends \yii\web\AssetBundle
+class FlagIconsDemoAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = '@vendor/p2made/yii2-p2y2-things-demo/assets/lib';
 
 	public $css = [
-		'css/asset-demo.css',
-		'css/things-demo.css',
+		'css/world-flags-demo.css',
 	];
 
 	public $depends = [

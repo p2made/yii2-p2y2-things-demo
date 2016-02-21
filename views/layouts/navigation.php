@@ -50,9 +50,13 @@ use p2made\demo\Things\widgets\Alert;
 			['label' => 'Forms', 'url' => ['/site/page', 'view' => 'forms']],
 			['label' => 'Notifications', 'url' => ['/site/page', 'view' => 'notifications']],
 			['label' => 'Typography', 'url' => ['/site/page', 'view' => 'typography']],
-			['label' => 'Icons', 'url' => ['/site/page', 'view' => 'icons']],
 			['label' => 'Grid', 'url' => ['/site/page', 'view' => 'grid']],
 			['label' => 'Shortcodes', 'url' => ['/site/page', 'view' => 'shortcodes']],
+		]],
+		['label' => 'Icons', 'items' => [
+			['label' => 'Font Awesome', 'url' => ['/site/page', 'view' => 'font-awesome']],
+			['label' => 'Glyphicons', 'url' => ['/site/page', 'view' => 'glyphicons']],
+			['label' => 'Flag Icons', 'url' => ['/site/page', 'view' => 'flag-icons']],
 		]],
 		['label' => 'Developer', 'items' => [
 			['label' => 'Gii', 'url' => ['/gii']],

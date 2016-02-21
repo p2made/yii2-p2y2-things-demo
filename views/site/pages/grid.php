@@ -9,6 +9,7 @@
  */
 
 use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
 
 // load assets...
 p2made\assets\JqueryAsset::register($this);

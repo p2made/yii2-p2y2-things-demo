@@ -9,6 +9,7 @@
  */
 
 use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
 
 // load assets...
 p2made\assets\JqueryAsset::register($this);
@@ -28,6 +29,9 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
 	<h1><?= Html::encode($this->title) ?></h1>
+	<?= Breadcrumbs::widget([
+		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+	]) ?>
 
 	<p>This is the About page. You may modify the following file to customize its content:</p>
 

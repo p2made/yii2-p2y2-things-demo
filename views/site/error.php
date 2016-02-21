@@ -9,6 +9,7 @@
  */
 
 use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
 
 // load assets...
 p2made\assets\JqueryAsset::register($this);
@@ -32,6 +33,9 @@ $this->title = $name;
 <div class="site-error">
 
 	<h1><?= Html::encode($this->title) ?></h1>
+	<?= Breadcrumbs::widget([
+		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+	]) ?>
 
 	<div class="alert alert-danger">
 		<?= nl2br(Html::encode($message)) ?>

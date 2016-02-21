@@ -9,6 +9,7 @@
  */
 
 use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
 use yii\helpers\Url;
 use p2made\models\FullCalendarEvent;
 use p2made\widgets\FullCalendarWidget;
@@ -99,6 +100,9 @@ $events = array();
 ?>
 <div class="site-about">
 	<h1><?= Html::encode($this->title) ?></h1>
+	<?= Breadcrumbs::widget([
+		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+	]) ?>
 	<p><code><?= __FILE__ ?></code></p>
 
 	<?= FullCalendarWidget::widget(array(

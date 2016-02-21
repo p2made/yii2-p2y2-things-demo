@@ -9,6 +9,7 @@
  */
 
 use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
 
 // load assets...
@@ -31,21 +32,33 @@ $sampleUrl = 'http://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=lout
 $shortenedUrl = \p2made\helpers\isgd\IsGdHelpers::shortenUrl($sampleUrl);
 ?>
 <div class="site-index">
+	<h1><?= Html::encode($this->title) ?></h1>
+	<?= Breadcrumbs::widget([
+		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+	]) ?>
 
-	<div class="jumbotron">
-		<h1>is.gd</h1>
+	<div class="row">
+		<div class="col-lg-12">
+			<p class="lead">Url shortening with <a href="http://is.gd" target="_blank">is.gd</a>...</p>
+		</div>
 	</div>
 
-	<div class="body-content">
-
+	<section>
 		<div class="row">
-			<div class="col-lg-12">
-				<p><strong>Full URL:</strong> <a href="<?= $sampleUrl ?>" target="_blank"><?= $sampleUrl ?></a></p>
-				<p><strong>Shortened URL:</strong> <a href="<?= $shortenedUrl ?>" target="_blank"><?= $shortenedUrl ?></a></p>
+			<div class="col-lg-2 text-right">
+				<p><strong>Full URL:</strong></p>
+			</div>
+			<div class="col-lg-10">
+				<p><a href="<?= $sampleUrl ?>" target="_blank"><?= $sampleUrl ?></a></p>
+			</div>
+			<div class="col-lg-2 text-right">
+				<p><strong>Shortened URL:</strong></p>
+			</div>
+			<div class="col-lg-10">
+				<p><a href="<?= $shortenedUrl ?>" target="_blank"><?= $shortenedUrl ?></a></p>
 			</div>
 		</div>
-
-	</div>
+	</section>
 </div>
 
 

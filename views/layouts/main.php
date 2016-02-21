@@ -11,7 +11,6 @@
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
 use p2made\demo\Things\widgets\Alert;
 
 /* @var $this \yii\web\View */
@@ -36,9 +35,6 @@ yii\web\YiiAsset::register($this);
 <?= $this->render('navigation.php', []) ?>
 
 		<div class="container">
-<?= Breadcrumbs::widget([
-	'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-]) ?>
 <?= Alert::widget() ?>
 <?= $content ?>
 

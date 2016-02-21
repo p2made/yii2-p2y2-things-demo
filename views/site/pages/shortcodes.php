@@ -9,6 +9,7 @@
  */
 
 use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
 
 // load assets...
 p2made\assets\JqueryAsset::register($this);
@@ -35,6 +36,9 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div id="content-wrapper">
 	<h1><?= Html::encode($this->title) ?></h1>
+	<?= Breadcrumbs::widget([
+		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+	]) ?>
 
 		<div class="container">
 

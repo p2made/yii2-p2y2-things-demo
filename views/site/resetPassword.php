@@ -9,6 +9,7 @@
  */
 
 use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
 
 // load assets...
@@ -32,6 +33,9 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-reset-password">
 	<h1><?= Html::encode($this->title) ?></h1>
+	<?= Breadcrumbs::widget([
+		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+	]) ?>
 
 	<p>Please choose your new password:</p>
 
