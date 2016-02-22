@@ -1,6 +1,6 @@
 <?php
 /**
- * ThingsDemoAsset.php
+ * AnimateDemoAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman

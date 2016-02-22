@@ -2,7 +2,7 @@
 /**
  * uuid.php
  *
- * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
+ * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
  * @package p2made/yii2-p2y2-things-demo
  * @license MIT
@@ -99,6 +99,9 @@ p2made\assets\PrintShivAsset::register($this);
  */
 ?>
 <div class="site-index">
+	<?= Breadcrumbs::widget([
+		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+	]) ?>
 
 	<div class="jumbotron">
 		<h1>UUIDs!</h1>
@@ -171,10 +174,6 @@ p2made\assets\PrintShivAsset::register($this);
 					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
 				</ul>
 			</div>
-		</div>
-		<div class="row">
-		</div>
-		<div class="row">
 		</div>
 
 	</div>

@@ -2,7 +2,7 @@
 /**
  * navigation.php
  *
- * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
+ * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
  * @package p2made/yii2-p2y2-things-demo
  * @license MIT
@@ -28,15 +28,18 @@ use p2made\demo\Things\widgets\Alert;
 	]);
 	$menuItems = [
 		['label' => 'Home', 'url' => ['/site/index']],
-		['label' => 'Pages', 'items' => [
-			['label' => 'About', 'url' => ['/site/about']],
-			['label' => 'Contact', 'url' => ['/site/contact']],
+		['label' => 'Demos', 'items' => [
+			['label' => 'Animate.css Demo', 'url' => ['/site/page', 'view' => 'animate']],
 			['label' => 'is.gd Demo', 'url' => ['/site/page', 'view' => 'is-gd']],
 			['label' => 'UUID Demo', 'url' => ['/site/page', 'view' => 'uuid']],
-			['label' => 'Blank Page', 'url' => ['/site/page', 'view' => 'blank']],
 			'<li role="presentation" class="divider"></li>',
 			['label' => 'Default Calendar', 'url' => ['/site/page', 'view' => 'calendar']],
 			['label' => 'Basic Calendar Views', 'url' => ['/site/page', 'view' => 'calendarBasic']],
+		]],
+		['label' => 'Pages', 'items' => [
+			['label' => 'About', 'url' => ['/site/about']],
+			['label' => 'Contact', 'url' => ['/site/contact']],
+			['label' => 'Blank Page', 'url' => ['/site/page', 'view' => 'blank']],
 		]],
 		['label' => 'Charts and Tables', 'items' => [
 			['label' => 'Flot Charts', 'url' => ['/site/page', 'view' => 'flot']],
