@@ -16,12 +16,12 @@
         }
     ],
 
-    "version": "0.9.5",
+    "version": "0.9.6",
     "minimum-stability": "dev",
 
     "require": {
         "yiisoft/yii2": ">=2.0.6",
-        "p2made/yii2-p2y2-things": ">=1.0.5",
+        "p2made/yii2-p2y2-things": ">=1.0.6",
         "p2made/yii2-is-gd": ">=1.0.3",
         "p2made/yii2-uuid": ">=3.0.0"
     },
