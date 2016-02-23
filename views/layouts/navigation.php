@@ -29,9 +29,9 @@ use p2made\demo\Things\widgets\Alert;
 	$menuItems = [
 		['label' => 'Home', 'url' => ['/site/index']],
 		['label' => 'Demos', 'items' => [
-			['label' => 'Animate.css Demo', 'url' => ['/site/page', 'view' => 'animate']],
-			['label' => 'is.gd Demo', 'url' => ['/site/page', 'view' => 'is-gd']],
-			['label' => 'UUID Demo', 'url' => ['/site/page', 'view' => 'uuid']],
+			['label' => 'Animate.css', 'url' => ['/site/page', 'view' => 'animate']],
+			['label' => 'is.gd', 'url' => ['/site/page', 'view' => 'is-gd']],
+			['label' => 'UUID', 'url' => ['/site/page', 'view' => 'uuid']],
 			'<li role="presentation" class="divider"></li>',
 			['label' => 'Default Calendar', 'url' => ['/site/page', 'view' => 'calendar']],
 			['label' => 'Basic Calendar Views', 'url' => ['/site/page', 'view' => 'calendarBasic']],

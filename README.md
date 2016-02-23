@@ -1,4 +1,4 @@
-P2Y2Things Demo v0.9.3
+P2Y2Things Demo v0.9.5
 ======================
 
 A set of pages to demonstrate [`p2made/yii2-p2y2-things`](https://github.com/p2made/yii2-p2y2-things), bundled as a theme.
@@ -14,19 +14,19 @@ The preferred way to install P2Y2Things Demo is through [composer](http://getcom
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require --prefer-dist p2made/yii2-p2y2-things-demo "*"
+composer require --prefer-dist p2made/yii2-p2y2-things-demo ">=0.9.5"
 ```
 
 or
 
 ```
-php composer.phar require --prefer-dist p2made/yii2-p2y2-things-demo "*"
+php composer.phar require --prefer-dist p2made/yii2-p2y2-things-demo ">=0.9.5"
 ```
 
 Alternatively add:
 
 ```
-"p2made/yii2-p2y2-things-demo": "*"
+"p2made/yii2-p2y2-things-demo": ">=0.9.5"
 ```
 
 to the requires section of your `composer.json` file & P2Y2Things Demo will be installed next time you run `composer update`.
@@ -38,7 +38,7 @@ Quick Start
 
 Once the extension is installed, you can have a *preview* by reconfiguring the path mappings of the view component:
 
-```php
+```
 	'components' => [
 		'view' => [
 			'theme' => [
@@ -52,7 +52,7 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 
 To view pages in `site/pages/` you need to modify `actions()` in the `SiteController`:
 
-```php
+```
 	public function actions()
 	{
 		return [
@@ -67,6 +67,3 @@ To view pages in `site/pages/` you need to modify `actions()` in the `SiteContro
 **DO NOT** modify the views in the  `views/` folder. Your changes will be lost next time you run `composer update`.
 
 You can copy elements from these examples into your own views.
-
-
-

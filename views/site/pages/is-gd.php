@@ -32,14 +32,13 @@ $sampleUrl = 'http://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=lout
 $shortenedUrl = \p2made\helpers\isgd\IsGdHelpers::shortenUrl($sampleUrl);
 ?>
 <div class="site-index">
-	<h1><?= Html::encode($this->title) ?></h1>
 	<?= Breadcrumbs::widget([
 		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 	]) ?>
 
 	<div class="row">
 		<div class="col-lg-12">
-			<p class="lead">Url shortening with <a href="http://is.gd" target="_blank">is.gd</a>...</p>
+			<h1>URL shortening with <a href="http://is.gd" target="_blank">is.gd</a>...</h1>
 		</div>
 	</div>
 
@@ -49,14 +48,18 @@ $shortenedUrl = \p2made\helpers\isgd\IsGdHelpers::shortenUrl($sampleUrl);
 				<p><strong>Full URL:</strong></p>
 			</div>
 			<div class="col-lg-10">
-				<p><a href="<?= $sampleUrl ?>" target="_blank">http://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=louth&sll=53.800651,<br>-4.064941&sspn=33.219383,38.803711&ie=UTF8&hq=&hnear=Louth,+United+Kingdom&ll=53.370272,<br>-0.004034&spn=0.064883,0.075788&z=14</a></p><br>
-				Line breaks for better screen presentation only, &amp; <strong>not</strong> part of theURL submitted for shortening.
+				<p><a href="<?= $sampleUrl ?>" target="_blank">http://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=louth&sll=53.800651,<br>-4.064941&sspn=33.219383,38.803711&ie=UTF8&hq=&hnear=Louth,<br>+United+Kingdom&ll=53.370272,-0.004034&spn=0.064883,0.075788&z=14</a></p>
 			</div>
 			<div class="col-lg-2 text-right">
 				<p><strong>Shortened URL:</strong></p>
 			</div>
 			<div class="col-lg-10">
 				<p><a href="<?= $shortenedUrl ?>" target="_blank"><?= $shortenedUrl ?></a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-offset-2 col-lg-10">
+				<p>Line breaks in source URL for better screen presentation only, &amp; <strong>not</strong> part of the URL submitted for shortening.</p>
 			</div>
 		</div>
 	</section>

@@ -1,6 +1,6 @@
 {
     "name": "p2made/yii2-p2y2-things-demo",
-    "description": "Not really a theme. A set of pages to demonstrate p2made/yii2-asset-collection, bundled as a theme.",
+    "description": "Not really a theme. A set of pages to demonstrate p2made/yii2-p2y2-things, bundled as a theme.",
     "type": "yii2-extension",
     "keywords": [
         "yii2", "yii", "extension", "PHP",
@@ -16,12 +16,14 @@
         }
     ],
 
-    "version": "0.9.3",
+    "version": "0.9.5",
     "minimum-stability": "dev",
 
     "require": {
-        "yiisoft/yii2": "2.*",
-        "p2made/yii2-p2y2-things": "1.*"
+        "yiisoft/yii2": ">=2.0.6",
+        "p2made/yii2-p2y2-things": ">=1.0.5",
+        "p2made/yii2-is-gd": ">=1.0.3",
+        "p2made/yii2-uuid": ">=3.0.0"
     },
     "autoload": {
         "psr-4": {

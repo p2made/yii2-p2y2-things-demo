@@ -18,8 +18,9 @@ p2made\assets\BootstrapPluginAsset::register($this);
 p2made\assets\FontAwesomeAsset::register($this);
 p2made\assets\JuiAsset::register($this);
 
-p2made\demo\Things\assets\ThingsDemoAsset::register($this);
 p2made\assets\AnimateAsset::register($this);
+p2made\demo\Things\assets\ThingsDemoAsset::register($this);
+p2made\demo\Things\assets\AnimateDemoAsset::register($this);
 
 p2made\assets\Html5shivAsset::register($this);
 p2made\assets\PrintShivAsset::register($this);
@@ -113,9 +114,9 @@ p2made\assets\PrintShivAsset::register($this);
 	<div class="body-content">
 
 		<div class="row">
-			<div class="col-lg-offset-4 col-lg-4">
-				<form>
-					<select class="input input--dropdown js--animations">
+			<form>
+				<div class="col-lg-offset-4 col-lg-3">
+					<select class="form-control js--animations">
 
 						<optgroup label="Attention Seekers">
 							<option value="bounce">bounce</option>
@@ -235,13 +236,12 @@ p2made\assets\PrintShivAsset::register($this);
 						</optgroup>
 
 					</select>
+				</div>
 
-					<button class="butt js--triggerAnimation">Animate it</button>
-				</form>
-			</div>
-
-
-
+				<div class="col-lg-1">
+					<button class="btn btn-default js--triggerAnimation">Animate it</button>
+				</div>
+			</form>
 		</div>
 
 	</div>

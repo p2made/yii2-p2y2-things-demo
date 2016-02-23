@@ -16,7 +16,7 @@ class ThingsDemoAsset extends \yii\web\AssetBundle
 
 	public $css = [
 		'css/asset-demo.css',
-		'css/things-demo.css',
+//		'css/things-demo.css',
 	];
 
 	public $depends = [
