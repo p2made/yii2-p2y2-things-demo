@@ -107,15 +107,15 @@ p2made\assets\PrintShivAsset::register($this);
 	]) ?>
 
 	<div class="jumbotron">
-		<span id="animationSandbox" style="display: block;"><h1 class="site__title mega">Animate.css</h1></span>
-		<span class="beta subhead">Just-add-water CSS animations</span>
+		<span id="animationSandbox" style="display: block;"><h1><?= $this->title ?></h1></span>
+		<span>Just-add-water CSS animations</span>
 	</div>
 
 	<div class="body-content">
 
 		<div class="row">
 			<form>
-				<div class="col-lg-offset-4 col-lg-3">
+				<div class="col-md-offset-4 col-md-3">
 					<select class="form-control js--animations">
 
 						<optgroup label="Attention Seekers">
@@ -238,7 +238,7 @@ p2made\assets\PrintShivAsset::register($this);
 					</select>
 				</div>
 
-				<div class="col-lg-1">
+				<div class="col-md-1">
 					<button class="btn btn-default js--triggerAnimation">Animate it</button>
 				</div>
 			</form>

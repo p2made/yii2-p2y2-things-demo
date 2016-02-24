@@ -30,6 +30,8 @@ use p2made\demo\Things\widgets\Alert;
 		['label' => 'Home', 'url' => ['/site/index']],
 		['label' => 'Demos', 'items' => [
 			['label' => 'Animate.css', 'url' => ['/site/page', 'view' => 'animate']],
+			['label' => 'Bootstrap Social', 'url' => ['/site/page', 'view' => 'bootstrap-social']],
+			['label' => 'Font Awesome', 'url' => ['/site/page', 'view' => 'font-awesome']],
 			['label' => 'is.gd', 'url' => ['/site/page', 'view' => 'is-gd']],
 			['label' => 'UUID', 'url' => ['/site/page', 'view' => 'uuid']],
 			'<li role="presentation" class="divider"></li>',

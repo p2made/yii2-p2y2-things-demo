@@ -24,7 +24,7 @@ p2made\assets\Html5shivAsset::register($this);
 p2made\assets\PrintShivAsset::register($this);
 
 /* @var $this yii\web\View */
-$this->title = 'UUIDs';
+$this->title = 'UUID';
 $this->params['breadcrumbs'][] = $this->title;
 
 /*
@@ -104,17 +104,15 @@ p2made\assets\PrintShivAsset::register($this);
 	]) ?>
 
 	<div class="jumbotron">
-		<h1>UUIDs!</h1>
-		<h2>Los &amp; lots of UUIDs.</h2>
+		<h1><?= $this->title ?></h1>
+		<h2>Lots &amp; lots of UUIDs!</h2>
 	</div>
 
 	<div class="body-content">
 
 		<div class="row">
-		</div>
-		<div class="row">
-			<div class="col-lg-2"></div>
-			<div class="col-lg-4">
+			<div class="col-md-2"></div>
+			<div class="col-md-4">
 				<h4>Using no subdomain.</h4>
 				<ul>
 					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
@@ -144,7 +142,7 @@ p2made\assets\PrintShivAsset::register($this);
 					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid() ?></li>
 				</ul>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-md-4">
 				<h4>Using subdomain com.example.</h4>
 				<ul>
 					<li><?= \p2made\helpers\Uuid\UuidHelpers::uuid('com.example') ?></li>
