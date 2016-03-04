@@ -59,114 +59,114 @@ $iconGroups = [
 
 	<div class="body-content">
 
-<?php
-	$groupId = 'web-application';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'web-application';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 
-<?php
-	$groupId = 'hand';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'hand';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 
-<?php
-	$groupId = 'transportation';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'transportation';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 
-<?php
-	$groupId = 'gender';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'gender';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 
-<?php
-	$groupId = 'file-type';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'file-type';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 
-<?php
-	$groupId = 'spinner';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'spinner';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 
-			<div class="row"><div class="col-md-12">&nbsp;</div></div>
+			<br>
 			<div class="alert alert-success">
 				<ul class="fa-ul">
 					<li>
@@ -177,159 +177,159 @@ $iconGroups = [
 			</div>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->spin()->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')->spin()') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->spin()->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')->spin()') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 
-<?php
-	$groupId = 'form-control';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'form-control';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 
-<?php
-	$groupId = 'payment';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'payment';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 
-<?php
-	$groupId = 'chart';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'chart';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 
-<?php
-	$groupId = 'currency';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'currency';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 
-<?php
-	$groupId = 'text-editor';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'text-editor';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 
-<?php
-	$groupId = 'directional';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'directional';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 
-<?php
-	$groupId = 'video-player';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'video-player';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 
-<?php
-	$groupId = 'brand';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'brand';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 
-			<div class="row"><div class="col-md-12">&nbsp;</div></div>
+			<br>
 			<div class="alert alert-success">
 				<ul>
 					<li>All brand icons are trademarks of their respective owners.</li>
@@ -339,21 +339,21 @@ $iconGroups = [
 			</div>
 		</section>
 
-<?php
-	$groupId = 'medical';
-	$group = $iconGroups[$groupId];
-	$icons = $group['icons'];
-?>
+		<?php
+			$groupId = 'medical';
+			$group = $iconGroups[$groupId];
+			$icons = $group['icons'];
+		?>
 		<section id="<?= $groupId ?>">
 			<h2><?= $group['title'] ?></h2>
 
 			<div class="row">
-<?php foreach ($icons as $icon) { ?>
-				<div class="fa-hover col-md-4">
-					<?= FA::icon($icon)->fixedWidth() ?>
-					<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
-				</div>
-<?php } ?>
+				<?php foreach ($icons as $icon) { ?>
+					<div class="fa-hover col-md-4">
+						<?= FA::icon($icon)->fixedWidth() ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+					</div>
+				<?php } ?>
 			</div>
 		</section>
 
