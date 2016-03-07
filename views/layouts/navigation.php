@@ -20,7 +20,7 @@ use p2made\demo\Things\widgets\Alert;
 ?>
 <?php
 	NavBar::begin([
-		'brandLabel' => 'P2Y2Things (v1.0.7, demo v0.9.7)',
+		'brandLabel' => 'P2Y2Things (v1.0.7)',
 		'brandUrl' => Yii::$app->homeUrl,
 		'options' => [
 			'class' => 'navbar-inverse navbar-fixed-top',
@@ -34,6 +34,7 @@ use p2made\demo\Things\widgets\Alert;
 			['label' => 'Font Awesome', 'url' => ['/site/page', 'view' => 'font-awesome']],
 			['label' => 'is.gd', 'url' => ['/site/page', 'view' => 'is-gd']],
 			['label' => 'UUID', 'url' => ['/site/page', 'view' => 'uuid']],
+			['label' => 'SweetAlert', 'url' => ['/site/page', 'view' => 'sweetalert']],
 			'<li role="presentation" class="divider"></li>',
 			['label' => 'Default Calendar', 'url' => ['/site/page', 'view' => 'calendar']],
 			['label' => 'Basic Calendar Views', 'url' => ['/site/page', 'view' => 'calendarBasic']],
