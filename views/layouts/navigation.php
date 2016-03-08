@@ -20,7 +20,7 @@ use p2made\demo\Things\widgets\Alert;
 ?>
 <?php
 	NavBar::begin([
-		'brandLabel' => 'P2Y2Things (v1.1.2)',
+		'brandLabel' => 'P2Y2Things (v1.1.3)',
 		'brandUrl' => Yii::$app->homeUrl,
 		'options' => [
 			'class' => 'navbar-inverse navbar-fixed-top',

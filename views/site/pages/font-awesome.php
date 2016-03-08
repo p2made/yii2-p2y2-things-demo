@@ -10,7 +10,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
-use rmrevin\yii\fontawesome\FA;
+use p2made\widgets\FA;
 
 // load assets...
 p2made\assets\JqueryAsset::register($this);
@@ -70,8 +70,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -88,8 +88,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -106,8 +106,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -124,8 +124,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -142,8 +142,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -160,8 +160,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -179,8 +179,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->spin()->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')->spin()') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->spin()->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')->spin()') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -197,8 +197,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -215,8 +215,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -233,8 +233,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -251,8 +251,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -269,8 +269,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -287,8 +287,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -305,8 +305,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -323,8 +323,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
@@ -350,8 +350,8 @@ $iconGroups = [
 			<div class="row">
 				<?php foreach ($icons as $icon) { ?>
 					<div class="fa-hover col-md-4">
-						<?= FA::icon($icon)->fixedWidth() ?>
-						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()</span>
+						<?= FA::icon($icon)->fixedWidth()->size(FA::SIZE_2X) ?>
+						<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><span class="text-muted">->fixedWidth()->size(FA::SIZE_2X)</span>
 					</div>
 				<?php } ?>
 			</div>
