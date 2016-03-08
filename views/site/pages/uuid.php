@@ -175,4 +175,6 @@ p2made\assets\PrintShivAsset::register($this);
 		</div>
 
 	</div>
+
+	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
 </div>

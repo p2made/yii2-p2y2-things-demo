@@ -34,7 +34,7 @@ use p2made\demo\Things\widgets\Alert;
 			['label' => 'Font Awesome', 'url' => ['/site/page', 'view' => 'font-awesome']],
 			['label' => 'is.gd', 'url' => ['/site/page', 'view' => 'is-gd']],
 			['label' => 'UUID', 'url' => ['/site/page', 'view' => 'uuid']],
-			['label' => 'SweetAlert', 'url' => ['/site/page', 'view' => 'sweetalert']],
+		//	['label' => 'SweetAlert', 'url' => ['/site/page', 'view' => 'sweetalert']],
 			'<li role="presentation" class="divider"></li>',
 			['label' => 'Default Calendar', 'url' => ['/site/page', 'view' => 'calendar']],
 			['label' => 'Basic Calendar Views', 'url' => ['/site/page', 'view' => 'calendarBasic']],

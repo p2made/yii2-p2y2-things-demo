@@ -1,6 +1,6 @@
 <?php
 /**
- * index.php
+ * is.gd.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -63,7 +63,6 @@ $shortenedUrl = \p2made\helpers\isgd\IsGdHelpers::shortenUrl($sampleUrl);
 			</div>
 		</div>
 	</section>
+
+	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
 </div>
-
-
-

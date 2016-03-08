@@ -358,4 +358,6 @@ $iconGroups = [
 		</section>
 
 	</div>
+
+	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
 </div><!-- /#content-wrapper -->

@@ -29,12 +29,11 @@ $this->title = 'Blank Page';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div id="content-wrapper">
-	<h1><?= Html::encode($this->title) ?></h1>
 	<?= Breadcrumbs::widget([
 		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 	]) ?>
 
+	<h1><?= Html::encode($this->title) ?></h1>
 
-
-
+	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
 </div><!-- /#content-wrapper -->

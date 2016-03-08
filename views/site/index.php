@@ -617,4 +617,6 @@ p2made\assets\PrintShivAsset::register($this);
 			</div><!-- /.panel -->
 		</div><!-- /.col-lg-4 -->
 	</div><!-- /.row -->
+
+	<p><code><?= __FILE__ ?></code></p>
 </div><!-- /#content-wrapper -->

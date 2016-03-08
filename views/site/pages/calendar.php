@@ -1,6 +1,6 @@
 <?php
 /**
- * pages/calendar/default.php
+ * calendar.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -34,68 +34,68 @@ $events = array();
 
 	$newEvent = new FullCalendarEvent();
 	$newEvent->title = 'All Day Event';
-	$newEvent->start = date('2015-06-01');
+	$newEvent->start = date("Y-m-d", mktime(0, 0, 0, date("m"), 01, date("Y")));
 	$events[] = $newEvent;
 
 	$newEvent = new FullCalendarEvent();
 	$newEvent->title = 'Long Event';
-	$newEvent->start = date('2015-06-07');
-	$newEvent->end = date('2015-06-10');
+	$newEvent->start = date("Y-m-d", mktime(0, 0, 0, date("m"), 07, date("Y")));
+	$newEvent->end = date("Y-m-d", mktime(0, 0, 0, date("m"), 10, date("Y")));
 	$events[] = $newEvent;
 
 	$newEvent = new FullCalendarEvent();
 	$newEvent->id = 999;
 	$newEvent->title = 'Repeating Event';
-	$newEvent->start = date('2015-06-09T16:00:00');
+	$newEvent->start = date("Y-m-dTH-i-s", mktime(16, 00, 00, date("m"), 09, date("Y")));
 	$events[] = $newEvent;
 
 	$newEvent = new FullCalendarEvent();
 	$newEvent->id = 999;
 	$newEvent->title = 'Repeating Event';
-	$newEvent->start = date('2015-06-16T16:00:00');
+	$newEvent->start = date("Y-m-dTH-i-s", mktime(16, 00, 00, date("m"), 16, date("Y")));
 	$events[] = $newEvent;
 
 	$newEvent = new FullCalendarEvent();
 	$newEvent->title = 'Conference';
-	$newEvent->start = date('2015-06-11');
-	$newEvent->end = date('2015-06-13');
+	$newEvent->start = date("Y-m-d", mktime(0, 0, 0, date("m"), 11, date("Y")));
+	$newEvent->end = date("Y-m-d", mktime(0, 0, 0, date("m"), 13, date("Y")));
 	$events[] = $newEvent;
 
 	$newEvent = new FullCalendarEvent();
 	$newEvent->title = 'Meeting';
-	$newEvent->start = date('2015-06-12T10:30:00');
-	$newEvent->end = date('2015-06-12T12:30:00');
+	$newEvent->start = date("Y-m-dTH-i-s", mktime(10, 30, 00, date("m"), 12, date("Y")));
+	$newEvent->end = date("Y-m-dTH-i-s", mktime(12, 30, 00, date("m"), 12, date("Y")));
 	$events[] = $newEvent;
 
 	$newEvent = new FullCalendarEvent();
 	$newEvent->title = 'Lunch';
-	$newEvent->start = date('2015-06-12T12:00:00');
+	$newEvent->start = date("Y-m-dTH-i-s", mktime(12, 00, 00, date("m"), 12, date("Y")));
 	$events[] = $newEvent;
 
 	$newEvent = new FullCalendarEvent();
 	$newEvent->title = 'Meeting';
-	$newEvent->start = date('2015-06-12T14:30:00');
+	$newEvent->start = date("Y-m-dTH-i-s", mktime(14, 30, 00, date("m"), 12, date("Y")));
 	$events[] = $newEvent;
 
 	$newEvent = new FullCalendarEvent();
 	$newEvent->title = 'Happy Hour';
-	$newEvent->start = date('2015-06-12T17:30:00');
+	$newEvent->start = date("Y-m-dTH-i-s", mktime(17, 30, 00, date("m"), 12, date("Y")));
 	$events[] = $newEvent;
 
 	$newEvent = new FullCalendarEvent();
 	$newEvent->title = 'Dinner';
-	$newEvent->start = date('2015-06-12T20:00:00');
+	$newEvent->start = date("Y-m-dTH-i-s", mktime(20, 00, 00, date("m"), 12, date("Y")));
 	$events[] = $newEvent;
 
 	$newEvent = new FullCalendarEvent();
 	$newEvent->title = 'Birthday Party';
-	$newEvent->start = date('2015-06-13T07:00:00');
+	$newEvent->start = date("Y-m-dTH-i-s", mktime(07, 00, 00, date("m"), 13, date("Y")));
 	$events[] = $newEvent;
 
 	$newEvent = new FullCalendarEvent();
 	$newEvent->title = 'Click for Google';
 	$newEvent->url = 'http://google.com/';
-	$newEvent->start = date('2015-06-28');
+	$newEvent->start = date("Y-m-d", mktime(0, 0, 0, date("m"), 28, date("Y")));
 	$events[] = $newEvent;
 ?>
 <div class="site-about">
@@ -103,10 +103,10 @@ $events = array();
 	<?= Breadcrumbs::widget([
 		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 	]) ?>
-	<p><code><?= __FILE__ ?></code></p>
 
 	<?= FullCalendarWidget::widget(array(
 		'events' => $events,
 	)) ?>
 
+	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
 </div>

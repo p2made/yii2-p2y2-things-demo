@@ -1,6 +1,6 @@
 <?php
 /**
- * blank.php
+ * bootstrap-social.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -221,4 +221,5 @@ $_icons = [
 <script>
 </script>
 
+	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
 </div><!-- /#site-index -->
