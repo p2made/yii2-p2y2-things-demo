@@ -1,4 +1,4 @@
-P2Y2Things Demo v1.1.3
+P2Y2Things Demo v1.1.4
 ======================
 
 A set of pages to demonstrate [`p2made/yii2-p2y2-things`](https://github.com/p2made/yii2-p2y2-things), bundled as a theme.
@@ -14,19 +14,19 @@ The preferred way to install P2Y2Things Demo is through [composer](http://getcom
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require --prefer-dist p2made/yii2-p2y2-things-demo ">=1.1.3"
+composer require --prefer-dist p2made/yii2-p2y2-things-demo ">=1.1.4"
 ```
 
 or
 
 ```
-php composer.phar require --prefer-dist p2made/yii2-p2y2-things-demo ">=1.1.3"
+php composer.phar require --prefer-dist p2made/yii2-p2y2-things-demo ">=1.1.4"
 ```
 
 Alternatively add:
 
 ```
-"p2made/yii2-p2y2-things-demo": ">=1.1.3"
+"p2made/yii2-p2y2-things-demo": ">=1.1.4"
 ```
 
 to the requires section of your `composer.json` file & P2Y2Things Demo will be installed next time you run `composer update`.
