@@ -19,7 +19,7 @@ p2made\assets\BootstrapPluginAsset::register($this);
 p2made\assets\FontAwesomeAsset::register($this);
 p2made\assets\JuiAsset::register($this);
 
-p2made\demo\Things\assets\ThingsDemoAsset::register($this);
+p2made\demo\assets\ThingsDemoAsset::register($this);
 
 p2made\assets\Html5shivAsset::register($this);
 p2made\assets\PrintShivAsset::register($this);

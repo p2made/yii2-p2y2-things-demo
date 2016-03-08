@@ -18,14 +18,14 @@ p2made\assets\BootstrapPluginAsset::register($this);
 p2made\assets\FontAwesomeAsset::register($this);
 p2made\assets\JuiAsset::register($this);
 
-p2made\demo\Things\assets\ThingsDemoAsset::register($this);
+p2made\demo\assets\ThingsDemoAsset::register($this);
 p2made\assets\SweetAlertAsset::register($this);
 
 p2made\assets\Html5shivAsset::register($this);
 p2made\assets\PrintShivAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
-p2made\demo\Things\demo\SweetAlertDemoAsset::register($this);
+p2made\demo\data\SweetAlertDemoData::register($this);
 
 /* @var $this yii\web\View */
 

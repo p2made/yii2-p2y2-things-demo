@@ -13,7 +13,7 @@ use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
 
 // load assets...
-p2made\demo\Things\assets\ThingsDemoAsset::register($this);
+p2made\demo\assets\ThingsDemoAsset::register($this);
 
 p2made\assets\AnimateAsset::register($this);
 p2made\assets\BootstrapAsset::register($this);
@@ -54,8 +54,8 @@ $this->title = 'My Yii Application';
 /*
 yii\web\YiiAsset::register($this);
 
-p2made\demo\Things\assets\ThingsDemoAsset::register($this);
-p2made\demo\Things\demo\ThingsDemoAsset::register($this);
+p2made\demo\assets\ThingsDemoAsset::register($this);
+p2made\demo\data\ThingsDemoAsset::register($this);
 
 p2made\assets\AnimateAsset::register($this);
 p2made\assets\BootstrapAsset::register($this);
@@ -217,7 +217,7 @@ p2made\assets\MorrisAsset::register($this);
 p2made\assets\Html5shivAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
-p2made\theme\sbAdmin\demo\MorrisDemoAsset::register($this);
+p2made\theme\sbAdmin\demo\MorrisDemoData::register($this);
 
 /*
 p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);

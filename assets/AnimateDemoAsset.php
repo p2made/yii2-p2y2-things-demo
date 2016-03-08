@@ -8,7 +8,7 @@
  * @license MIT
  */
 
-namespace p2made\demo\Things\assets;
+namespace p2made\demo\assets;
 
 class AnimateDemoAsset extends \yii\web\AssetBundle
 {
@@ -20,6 +20,6 @@ class AnimateDemoAsset extends \yii\web\AssetBundle
 
 	public $depends = [
 		'yii\web\YiiAsset',
-		'p2made\demo\Things\assets\ThingsDemoAsset',
+		'p2made\demo\assets\ThingsDemoAsset',
 	];
 }

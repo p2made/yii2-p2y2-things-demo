@@ -19,8 +19,8 @@ p2made\assets\FontAwesomeAsset::register($this);
 p2made\assets\JuiAsset::register($this);
 
 p2made\assets\AnimateAsset::register($this);
-p2made\demo\Things\assets\ThingsDemoAsset::register($this);
-p2made\demo\Things\assets\AnimateDemoAsset::register($this);
+p2made\demo\assets\ThingsDemoAsset::register($this);
+p2made\demo\assets\AnimateDemoAsset::register($this);
 
 p2made\assets\Html5shivAsset::register($this);
 p2made\assets\PrintShivAsset::register($this);
@@ -33,8 +33,8 @@ $this->params['breadcrumbs'][] = $this->title;
 /*
 yii\web\YiiAsset::register($this);
 
-p2made\demo\Things\assets\ThingsDemoAsset::register($this);
-p2made\demo\Things\demo\ThingsDemoAsset::register($this);
+p2made\demo\assets\ThingsDemoAsset::register($this);
+p2made\demo\data\ThingsDemoAsset::register($this);
 
 p2made\assets\AnimateAsset::register($this);
 p2made\assets\BootstrapAsset::register($this);

@@ -23,14 +23,14 @@ p2made\assets\BootstrapPluginAsset::register($this);
 p2made\assets\FontAwesomeAsset::register($this);
 p2made\assets\JuiAsset::register($this);
 
-p2made\demo\Things\assets\ThingsDemoAsset::register($this);
+p2made\demo\assets\ThingsDemoAsset::register($this);
 p2made\assets\FlotChartsAsset::register($this);
 
 p2made\assets\Html5shivAsset::register($this);
 p2made\assets\PrintShivAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
-p2made\demo\Things\demo\FlotDemoAsset::register($this);
+p2made\demo\data\FlotDemoData::register($this);
 ?>
 <div id="content-wrapper">
 	<div class="row">

@@ -1,6 +1,6 @@
 <?php
 /**
- * FlotDemoAsset.php
+ * FlotDemoData.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -8,11 +8,11 @@
  * @license MIT
  */
 
-namespace p2made\demo\Things\demo;
+namespace p2made\demo\data;
 
-class FlotDemoAsset extends \yii\web\AssetBundle
+class FlotDemoData extends P2DemoDataAssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-p2y2-things-demo/demo/files';
+	public $sourcePath = '@vendor/p2made/yii2-p2y2-things-demo/demo/data';
 
 	public $js = [
 		'flot-data.js'

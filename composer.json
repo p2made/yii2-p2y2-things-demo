@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "p2made\\demo\\Things\\": ""
+            "p2made\\demo\\": ""
         }
     }
 }

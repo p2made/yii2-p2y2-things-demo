@@ -8,7 +8,7 @@
  * @license MIT
  */
 
-namespace p2made\demo\Things\assets;
+namespace p2made\demo\assets;
 
 class FlagIconsDemoAsset extends \yii\web\AssetBundle
 {
