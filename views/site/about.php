@@ -20,9 +20,6 @@ p2made\assets\JuiAsset::register($this);
 
 p2made\demo\assets\ThingsDemoAsset::register($this);
 
-p2made\assets\Html5shivAsset::register($this);
-p2made\assets\PrintShivAsset::register($this);
-
 /* @var $this yii\web\View */
 $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;

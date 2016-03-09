@@ -18,14 +18,11 @@ p2made\assets\BootstrapPluginAsset::register($this);
 p2made\assets\FontAwesomeAsset::register($this);
 p2made\assets\JuiAsset::register($this);
 
-p2made\demo\assets\ThingsDemoAsset::register($this);
 p2made\assets\MorrisAsset::register($this);
+p2made\demo\assets\ThingsDemoAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
-p2made\demo\data\MorrisDemoData::register($this);
-
-p2made\assets\Html5shivAsset::register($this);
-p2made\assets\PrintShivAsset::register($this);
+p2made\demo\assets\MorrisDemoData::register($this);
 
 /* @var $this yii\web\View */
 
@@ -33,10 +30,11 @@ $this->title = 'Morris.js Charts';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div id="content-wrapper">
-	<h1><?= Html::encode($this->title) ?></h1>
 	<?= Breadcrumbs::widget([
 		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 	]) ?>
+
+	<h1><?= Html::encode($this->title) ?></h1>
 
 	<div class="row">
 		<div class="col-lg-6">
@@ -99,4 +97,6 @@ $this->params['breadcrumbs'][] = $this->title;
 			</div><!-- /.panel -->
 		</div><!-- /.col-lg-6 -->
 	</div><!-- /.row -->
+
+	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
 </div><!-- /#content-wrapper -->

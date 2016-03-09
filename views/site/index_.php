@@ -45,9 +45,6 @@ p2made\assets\RaphaelAsset::register($this);
 p2made\assets\SweetAlertAsset::register($this);
 p2made\assets\TimelineAsset::register($this);
 p2made\assets\WowAsset::register($this);
-p2made\assets\Html5shivAsset::register($this);
-p2made\assets\PrintShivAsset::register($this);
-
 /* @var $this yii\web\View */
 $this->title = 'My Yii Application';
 
@@ -55,7 +52,7 @@ $this->title = 'My Yii Application';
 yii\web\YiiAsset::register($this);
 
 p2made\demo\assets\ThingsDemoAsset::register($this);
-p2made\demo\data\ThingsDemoAsset::register($this);
+p2made\demo\assets\ThingsDemoAsset::register($this);
 
 p2made\assets\AnimateAsset::register($this);
 p2made\assets\BootstrapAsset::register($this);
@@ -85,9 +82,6 @@ p2made\assets\RaphaelAsset::register($this);
 p2made\assets\SweetAlertAsset::register($this);
 p2made\assets\TimelineAsset::register($this);
 p2made\assets\WowAsset::register($this);
-
-p2made\assets\Html5shivAsset::register($this);
-p2made\assets\PrintShivAsset::register($this);
 
 		'p2made\assets\AnimateAsset',
 		'p2made\assets\BootstrapAsset',

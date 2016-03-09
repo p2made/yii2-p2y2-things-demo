@@ -26,9 +26,6 @@ p2made\assets\FitvidsAsset::register($this);
 p2made\assets\WowAsset::register($this);
 p2made\assets\HolderAsset::register($this);
 
-p2made\assets\Html5shivAsset::register($this);
-p2made\assets\PrintShivAsset::register($this);
-
 /* @var $this yii\web\View */
 
 $this->title = 'Shortcodes';
