@@ -27,6 +27,7 @@
         "yiisoft/yii2": ">=2.0.6",
         "p2made/yii2-p2y2-things": ">=1.2"
     },
+
     "autoload": {
         "psr-4": {
             "p2made\\demo\\": ""
