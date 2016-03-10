@@ -1,5 +1,12 @@
-P2Y2Things Demo v1.2.0
+P2Y2Things Demo v1.2.1
 ======================
+
+[![License](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Total Downloads](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/downloads)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Latest Stable Version](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/v/stable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Latest Unstable Version](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/v/unstable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+
+---
 
 A set of pages to demonstrate [`p2made/yii2-p2y2-things`](https://github.com/p2made/yii2-p2y2-things), bundled as a theme.
 
@@ -14,19 +21,19 @@ The preferred way to install P2Y2Things Demo is through [composer](http://getcom
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require --prefer-dist p2made/yii2-p2y2-things-demo ">=1.2.0"
+composer require --prefer-dist p2made/yii2-p2y2-things-demo ">=1.2.1"
 ```
 
 or
 
 ```
-php composer.phar require --prefer-dist p2made/yii2-p2y2-things-demo ">=1.2.0"
+php composer.phar require --prefer-dist p2made/yii2-p2y2-things-demo ">=1.2.1"
 ```
 
 Alternatively add:
 
 ```
-"p2made/yii2-p2y2-things-demo": ">=1.2.0"
+"p2made/yii2-p2y2-things-demo": ">=1.2.1"
 ```
 
 to the requires section of your `composer.json` file & P2Y2Things Demo will be installed next time you run `composer update`.
@@ -67,3 +74,6 @@ To view pages in `site/pages/` you need to modify `actions()` in the `SiteContro
 **DO NOT** modify the views in the  `views/` folder. Your changes will be lost next time you run `composer update`.
 
 You can copy elements from these examples into your own views.
+
+---
+[![Dependency Status](https://www.versioneye.com/user/projects/56e14929df573d0048dafebb/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56e14929df573d0048dafebb)
