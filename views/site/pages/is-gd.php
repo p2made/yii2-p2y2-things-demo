@@ -26,7 +26,7 @@ $this->title = 'is.gd';
 $this->params['breadcrumbs'][] = $this->title;
 
 $sampleUrl = 'http://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=louth&sll=53.800651,-4.064941&sspn=33.219383,38.803711&ie=UTF8&hq=&hnear=Louth,+United+Kingdom&ll=53.370272,-0.004034&spn=0.064883,0.075788&z=14';
-$shortenedUrl = \p2made\helpers\isgd\IsGdHelpers::shortenUrl($sampleUrl);
+$shortenedUrl = \p2made\helpers\IsGdHelpers::shortenUrl($sampleUrl);
 ?>
 <div class="site-index">
 	<?= Breadcrumbs::widget([
