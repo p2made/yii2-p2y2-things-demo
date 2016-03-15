@@ -101,7 +101,7 @@ p2made\assets\WowAsset::register($this);
 	]) ?>
 
 	<div class="jumbotron">
-		<span id="animationSandbox" style="display: block;"><h1><?= $this->title ?></h1></span>
+		<span id="animationSandbox" style="display: block;"><h1><?= Html::encode($this->title) ?></h1></span>
 		<span>Just-add-water CSS animations</span>
 	</div>
 

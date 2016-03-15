@@ -15,8 +15,6 @@ class FlotDemoData extends \yii\web\AssetBundle
 	public $sourcePath = '@vendor/p2made/yii2-p2y2-things-demo/data';
 
 	public $js = [
-		//'flot-data.js'
-		'flot-data-1.js'
-		//'flot-data-2.js'
+		'flot-data.js'
 	];
 }

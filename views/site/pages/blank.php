@@ -12,12 +12,6 @@ use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 
 // load assets...
-p2made\assets\JqueryAsset::register($this);
-p2made\assets\BootstrapAsset::register($this);
-p2made\assets\BootstrapPluginAsset::register($this);
-p2made\assets\FontAwesomeAsset::register($this);
-p2made\assets\JuiAsset::register($this);
-
 p2made\demo\assets\ThingsDemoAsset::register($this);
 
 /* @var $this yii\web\View */
@@ -32,5 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 	<h1><?= Html::encode($this->title) ?></h1>
 
-	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
+	<div class="body-content">
+	</div><!-- /.body-content -->
+
 </div><!-- /#content-wrapper -->

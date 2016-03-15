@@ -12,12 +12,15 @@ namespace p2made\demo\assets;
 
 class ThingsDemoAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-p2y2-things-demo/lib';
+	public $sourcePath = '@vendor/p2made/yii2-p2y2-things-demo/assets/lib';
 
 	public $css = [
 		'css/things-demo.css',
 	];
 
 	public $depends = [
+		'p2made\assets\BootstrapAsset',
+		'p2made\assets\BootstrapPluginAsset',
+		'p2made\assets\FontAwesomeAsset',
 	];
 }

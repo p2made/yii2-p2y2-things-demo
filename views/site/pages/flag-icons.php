@@ -10,20 +10,17 @@
 
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
+use p2made\widgets\FA;
 
 // load assets...
-p2made\assets\JqueryAsset::register($this);
-p2made\assets\BootstrapAsset::register($this);
-p2made\assets\BootstrapPluginAsset::register($this);
-p2made\assets\FlagIconCssAsset::register($this);
-p2made\assets\JuiAsset::register($this);
-
 p2made\demo\assets\ThingsDemoAsset::register($this);
+p2made\assets\FlagIconCssAsset::register($this);
+
 p2made\demo\assets\FlagIconsDemoAsset::register($this);
 
 /* @var $this yii\web\View */
 
-$this->title = 'Flag Icons';
+$this->title = 'flag-icon-css';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div id="content-wrapper">
@@ -31,6 +28,19 @@ $this->params['breadcrumbs'][] = $this->title;
 	<?= Breadcrumbs::widget([
 		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 	]) ?>
+
+	<div class="jumbotron">
+		<div class="container">
+			<h1><?= Html::encode($this->title) ?></h1>
+			<p>A collection of all country flags in SVG — plus the CSS for easier integration.</p>
+		</div>
+	</div>
+
+	<div class="body-content">
+	</div>
+
+
+
 
 	<section>
 		<h2>Examples (inline with text)</h2>

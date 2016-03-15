@@ -20,14 +20,25 @@ use p2made\demo\Things\widgets\Alert;
 ?>
 <?php
 	NavBar::begin([
-		'brandLabel' => 'P2Y2Things (v1.2.2)',
+		'brandLabel' => '<img width="150" height="50" src="http://placehold.it/150x50/222222/FFCC00?text=P2Y2Things" alt="P2Y2Things">',
+//		'brandLabel' => '<img width="150" height="50" src="/images/p2y2things_150x50.png" alt="P2Y2Things">',
 		'brandUrl' => Yii::$app->homeUrl,
 		'options' => [
-			'class' => 'navbar-inverse navbar-fixed-top',
+			'class' => 'navbar-p2m navbar-inverse navbar-fixed-top',
 		],
 	]);
+
+
+
+
+
 	$menuItems = [
-		['label' => 'Home', 'url' => ['/site/index']],
+	//	['label' => 'Home', 'url' => ['/site/index']],
+		['label' => 'Charts', 'items' => [
+			['label' => 'Flot Charts', 'url' => ['/site/page', 'view' => 'flot']],
+			['label' => 'Morris.js Charts', 'url' => ['/site/page', 'view' => 'morris']],
+		]],
+		['label' => 'Tables', 'url' => ['/site/page', 'view' => 'tables']],
 		['label' => 'Demos', 'items' => [
 			['label' => 'Animate.css', 'url' => ['/site/page', 'view' => 'animate']],
 			['label' => 'Bootstrap Social', 'url' => ['/site/page', 'view' => 'bootstrap-social']],
@@ -47,12 +58,6 @@ use p2made\demo\Things\widgets\Alert;
 			['label' => 'About', 'url' => ['/site/about']],
 			['label' => 'Contact', 'url' => ['/site/contact']],
 			['label' => 'Blank Page', 'url' => ['/site/page', 'view' => 'blank']],
-		]],
-		['label' => 'Charts and Tables', 'items' => [
-			['label' => 'Flot Charts', 'url' => ['/site/page', 'view' => 'flot']],
-			['label' => 'Morris.js Charts', 'url' => ['/site/page', 'view' => 'morris']],
-			'<li role="presentation" class="divider"></li>',
-			['label' => 'Tables', 'url' => ['/site/page', 'view' => 'tables']],
 		]],
 		['label' => 'UI Elements', 'items' => [
 			['label' => 'Panels and Wells', 'url' => ['/site/page', 'view' => 'panels-wells']],

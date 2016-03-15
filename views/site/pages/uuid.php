@@ -98,7 +98,7 @@ p2made\assets\WowAsset::register($this);
 	]) ?>
 
 	<div class="jumbotron">
-		<h1><?= $this->title ?></h1>
+		<h1><?= Html::encode($this->title) ?></h1>
 		<h2>Lots &amp; lots of UUIDs!</h2>
 	</div>
 
