@@ -1,6 +1,6 @@
 <?php
 /**
- * DataTablesDemoData.php
+ * DataTablesDemoAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -10,11 +10,11 @@
 
 namespace p2made\demo\assets;
 
-class DataTablesDemoData extends \yii\web\AssetBundle
+class DataTablesDemoAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-p2y2-things-demo/data';
+	public $sourcePath = '@vendor/p2made/yii2-p2y2-things-demo/assets/lib';
 
 	public $js = [
-		'datatables-data.js'
+		'js/datatables-demo.js'
 	];
 }

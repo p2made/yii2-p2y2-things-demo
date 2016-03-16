@@ -26,7 +26,9 @@ $this->params['breadcrumbs'][] = $this->title;
 		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 	]) ?>
 
-	<h1><?= Html::encode($this->title) ?></h1>
+	<div class="jumbotron">
+		<h1><?= Html::encode($this->title) ?></h1>
+	</div>
 
 	<div class="body-content">
 		<div class="row">

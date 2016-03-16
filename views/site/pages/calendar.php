@@ -15,16 +15,10 @@ use p2made\models\FullCalendarEvent;
 use p2made\widgets\FullCalendarWidget;
 
 // load assets...
-p2made\assets\JqueryAsset::register($this);
-p2made\assets\BootstrapAsset::register($this);
-p2made\assets\BootstrapPluginAsset::register($this);
-p2made\assets\FontAwesomeAsset::register($this);
-p2made\assets\JuiAsset::register($this);
-
 p2made\demo\assets\ThingsDemoAsset::register($this);
 
 /* @var $this yii\web\View */
-$this->title = 'Calendar Basic';
+$this->title = 'Calendar';
 $this->params['breadcrumbs'][] = $this->title;
 
 $theYear = date("Y");
@@ -99,14 +93,20 @@ $events = array();
 	$events[] = $newEvent;
 ?>
 <div class="site-about">
-	<h1><?= Html::encode($this->title) ?></h1>
 	<?= Breadcrumbs::widget([
 		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 	]) ?>
 
-	<?= FullCalendarWidget::widget(array(
-		'events' => $events,
-	)) ?>
+	<div class="jumbotron">
+		<h1><?= Html::encode($this->title) ?></h1>
+	</div>
 
-	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
+	<div class="body-content">
+
+		<?= FullCalendarWidget::widget(array(
+			'events' => $events,
+		)) ?>
+
+	</div><!-- /.body-content -->
+
 </div>

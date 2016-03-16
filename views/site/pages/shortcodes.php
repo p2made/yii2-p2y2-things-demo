@@ -12,19 +12,7 @@ use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 
 // load assets...
-p2made\assets\JqueryAsset::register($this);
-p2made\assets\BootstrapAsset::register($this);
-p2made\assets\BootstrapPluginAsset::register($this);
-p2made\assets\FontAwesomeAsset::register($this);
-p2made\assets\JuiAsset::register($this);
-
 p2made\demo\assets\ThingsDemoAsset::register($this);
-
-p2made\assets\AnimateAsset::register($this);
-p2made\assets\GMapsAsset::register($this);
-p2made\assets\FitvidsAsset::register($this);
-p2made\assets\WowAsset::register($this);
-p2made\assets\HolderAsset::register($this);
 
 /* @var $this yii\web\View */
 
@@ -32,10 +20,15 @@ $this->title = 'Shortcodes';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div id="content-wrapper">
-	<h1><?= Html::encode($this->title) ?></h1>
 	<?= Breadcrumbs::widget([
 		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 	]) ?>
+
+	<div class="jumbotron">
+		<h1><?= Html::encode($this->title) ?></h1>
+	</div>
+
+	<div class="body-content">
 
 		<div class="container">
 
@@ -374,6 +367,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
 		</div>
 
-
+	</div><!-- /.body-content -->
 
 </div><!-- /#content-wrapper -->

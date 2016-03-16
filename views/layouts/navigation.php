@@ -12,6 +12,7 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
+use p2made\widgets\FA;
 use p2made\demo\Things\widgets\Alert;
 
 /* @var $this \yii\web\View */
@@ -28,41 +29,21 @@ use p2made\demo\Things\widgets\Alert;
 		],
 	]);
 
-
-
-
-
 	$menuItems = [
 	//	['label' => 'Home', 'url' => ['/site/index']],
 		['label' => 'Charts', 'items' => [
 			['label' => 'Flot Charts', 'url' => ['/site/page', 'view' => 'flot']],
 			['label' => 'Morris.js Charts', 'url' => ['/site/page', 'view' => 'morris']],
-		]],
-		['label' => 'Tables', 'url' => ['/site/page', 'view' => 'tables']],
-		['label' => 'Demos', 'items' => [
-			['label' => 'Animate.css', 'url' => ['/site/page', 'view' => 'animate']],
-			['label' => 'Bootstrap Social', 'url' => ['/site/page', 'view' => 'bootstrap-social']],
-			['label' => 'Font Awesome', 'url' => ['/site/page', 'view' => 'font-awesome']],
-			['label' => 'is.gd', 'url' => ['/site/page', 'view' => 'is-gd']],
-			['label' => 'UUID', 'url' => ['/site/page', 'view' => 'uuid']],
-		//	['label' => 'SweetAlert', 'url' => ['/site/page', 'view' => 'sweetalert']],
-			'<li role="presentation" class="divider"></li>',
 			['label' => 'Charts', 'url' => ['/site/page', 'view' => 'charts']],
-			['label' => 'Flot Charts', 'url' => ['/site/page', 'view' => 'flot']],
-			['label' => 'Morris.js Charts', 'url' => ['/site/page', 'view' => 'morris']],
-			'<li role="presentation" class="divider"></li>',
-			['label' => 'Default Calendar', 'url' => ['/site/page', 'view' => 'calendar']],
-			['label' => 'Basic Calendar Views', 'url' => ['/site/page', 'view' => 'calendarBasic']],
 		]],
-		['label' => 'Pages', 'items' => [
-			['label' => 'About', 'url' => ['/site/about']],
-			['label' => 'Contact', 'url' => ['/site/contact']],
-			['label' => 'Blank Page', 'url' => ['/site/page', 'view' => 'blank']],
+		['label' => 'Demos', 'items' => [
+			['label' => 'Tables', 'url' => ['/site/page', 'view' => 'tables']],
+			['label' => 'Forms', 'url' => ['/site/page', 'view' => 'forms']],
+			['label' => 'Calendar', 'url' => ['/site/page', 'view' => 'calendar']],
 		]],
 		['label' => 'UI Elements', 'items' => [
 			['label' => 'Panels and Wells', 'url' => ['/site/page', 'view' => 'panels-wells']],
 			['label' => 'Buttons', 'url' => ['/site/page', 'view' => 'buttons']],
-			['label' => 'Forms', 'url' => ['/site/page', 'view' => 'forms']],
 			['label' => 'Notifications', 'url' => ['/site/page', 'view' => 'notifications']],
 			['label' => 'Typography', 'url' => ['/site/page', 'view' => 'typography']],
 			['label' => 'Grid', 'url' => ['/site/page', 'view' => 'grid']],
@@ -73,9 +54,24 @@ use p2made\demo\Things\widgets\Alert;
 			['label' => 'Glyphicons', 'url' => ['/site/page', 'view' => 'glyphicons']],
 			['label' => 'Flag Icons', 'url' => ['/site/page', 'view' => 'flag-icons']],
 		]],
+		['label' => 'Pages', 'items' => [
+			['label' => 'About', 'url' => ['/site/about']],
+			['label' => 'Contact', 'url' => ['/site/contact']],
+			['label' => 'Blank Page', 'url' => ['/site/page', 'view' => 'blank']],
+			['label' => 'Scratchpad', 'url' => ['/site/page', 'view' => 'scratchpad']],
+		]],
 		['label' => 'Developer', 'items' => [
 			['label' => 'Gii', 'url' => ['/gii']],
 			['label' => 'Debug', 'url' => ['/debug']],
+		]],
+
+		['label' => '... in progress', 'items' => [
+			['label' => 'Animate.css', 'url' => ['/site/page', 'view' => 'animate']],
+			['label' => 'Bootstrap Social', 'url' => ['/site/page', 'view' => 'bootstrap-social']],
+			['label' => 'Font Awesome', 'url' => ['/site/page', 'view' => 'font-awesome']],
+			['label' => 'is.gd', 'url' => ['/site/page', 'view' => 'is-gd']],
+			['label' => 'UUID', 'url' => ['/site/page', 'view' => 'uuid']],
+		//	['label' => 'SweetAlert', 'url' => ['/site/page', 'view' => 'sweetalert']],
 		]],
 	];
 	$userMenuItems = [];
