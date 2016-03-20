@@ -34,7 +34,6 @@ use p2made\demo\Things\widgets\Alert;
 		['label' => 'Charts', 'items' => [
 			['label' => 'Flot Charts', 'url' => ['/site/page', 'view' => 'flot']],
 			['label' => 'Morris.js Charts', 'url' => ['/site/page', 'view' => 'morris']],
-			['label' => 'Charts', 'url' => ['/site/page', 'view' => 'charts']],
 		]],
 		['label' => 'Demos', 'items' => [
 			['label' => 'Tables', 'url' => ['/site/page', 'view' => 'tables']],

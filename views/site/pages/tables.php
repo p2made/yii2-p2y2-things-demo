@@ -23,6 +23,74 @@ p2made\demo\assets\DataTablesDemoAsset::register($this);
 
 $this->title = 'Tables';
 $this->params['breadcrumbs'][] = $this->title;
+
+	$browserData = [
+		['browser' => 'Internet Explorer 4.0', 'platform' => 'Win 95+', 'engine' => 'Trident', 'version' => '4', 'css_grade' => 'X', 'even' => false],
+		['browser' => 'Internet Explorer 5.0', 'platform' => 'Win 95+', 'engine' => 'Trident', 'version' => '5', 'css_grade' => 'C', 'even' => true],
+		['browser' => 'Internet Explorer 5.5', 'platform' => 'Win 95+', 'engine' => 'Trident', 'version' => '5.5', 'css_grade' => 'A', 'even' => false],
+		['browser' => 'Internet Explorer 6', 'platform' => 'Win 98+', 'engine' => 'Trident', 'version' => '6', 'css_grade' => 'A', 'even' => true],
+		['browser' => 'Internet Explorer 7', 'platform' => 'Win XP SP2+', 'engine' => 'Trident', 'version' => '7', 'css_grade' => 'A', 'even' => false],
+		['browser' => 'AOL browser (AOL desktop)', 'platform' => 'Win XP', 'engine' => 'Trident', 'version' => '6', 'css_grade' => 'A', 'even' => true],
+		['browser' => 'Firefox 1.0', 'platform' => 'Win 98+ / OSX.2+', 'engine' => 'Gecko', 'version' => '1.7', 'css_grade' => 'A'],
+		['browser' => 'Firefox 1.5', 'platform' => 'Win 98+ / OSX.2+', 'engine' => 'Gecko', 'version' => '1.8', 'css_grade' => 'A'],
+		['browser' => 'Firefox 2.0', 'platform' => 'Win 98+ / OSX.2+', 'engine' => 'Gecko', 'version' => '1.8', 'css_grade' => 'A'],
+		['browser' => 'Firefox 3.0', 'platform' => 'Win 2k+ / OSX.3+', 'engine' => 'Gecko', 'version' => '1.9', 'css_grade' => 'A'],
+		['browser' => 'Camino 1.0', 'platform' => 'OSX.2+', 'engine' => 'Gecko', 'version' => '1.8', 'css_grade' => 'A'],
+		['browser' => 'Camino 1.5', 'platform' => 'OSX.3+', 'engine' => 'Gecko', 'version' => '1.8', 'css_grade' => 'A'],
+		['browser' => 'Netscape 7.2', 'platform' => 'Win 95+ / Mac OS 8.6-9.2', 'engine' => 'Gecko', 'version' => '1.7', 'css_grade' => 'A'],
+		['browser' => 'Netscape Browser 8', 'platform' => 'Win 98SE+', 'engine' => 'Gecko', 'version' => '1.7', 'css_grade' => 'A'],
+		['browser' => 'Netscape Navigator 9', 'platform' => 'Win 98+ / OSX.2+', 'engine' => 'Gecko', 'version' => '1.8', 'css_grade' => 'A'],
+		['browser' => 'Mozilla 1.0', 'platform' => 'Win 95+ / OSX.1+', 'engine' => 'Gecko', 'version' => '1', 'css_grade' => 'A'],
+		['browser' => 'Mozilla 1.1', 'platform' => 'Win 95+ / OSX.1+', 'engine' => 'Gecko', 'version' => '1.1', 'css_grade' => 'A'],
+		['browser' => 'Mozilla 1.2', 'platform' => 'Win 95+ / OSX.1+', 'engine' => 'Gecko', 'version' => '1.2', 'css_grade' => 'A'],
+		['browser' => 'Mozilla 1.3', 'platform' => 'Win 95+ / OSX.1+', 'engine' => 'Gecko', 'version' => '1.3', 'css_grade' => 'A'],
+		['browser' => 'Mozilla 1.4', 'platform' => 'Win 95+ / OSX.1+', 'engine' => 'Gecko', 'version' => '1.4', 'css_grade' => 'A'],
+		['browser' => 'Mozilla 1.5', 'platform' => 'Win 95+ / OSX.1+', 'engine' => 'Gecko', 'version' => '1.5', 'css_grade' => 'A'],
+		['browser' => 'Mozilla 1.6', 'platform' => 'Win 95+ / OSX.1+', 'engine' => 'Gecko', 'version' => '1.6', 'css_grade' => 'A'],
+		['browser' => 'Mozilla 1.7', 'platform' => 'Win 98+ / OSX.1+', 'engine' => 'Gecko', 'version' => '1.7', 'css_grade' => 'A'],
+		['browser' => 'Mozilla 1.8', 'platform' => 'Win 98+ / OSX.1+', 'engine' => 'Gecko', 'version' => '1.8', 'css_grade' => 'A'],
+		['browser' => 'Seamonkey 1.1', 'platform' => 'Win 98+ / OSX.2+', 'engine' => 'Gecko', 'version' => '1.8', 'css_grade' => 'A'],
+		['browser' => 'Epiphany 2.20', 'platform' => 'Gnome', 'engine' => 'Gecko', 'version' => '1.8', 'css_grade' => 'A'],
+		['browser' => 'Safari 1.2', 'platform' => 'OSX.3', 'engine' => 'Webkit', 'version' => '125.5', 'css_grade' => 'A'],
+		['browser' => 'Safari 1.3', 'platform' => 'OSX.3', 'engine' => 'Webkit', 'version' => '312.8', 'css_grade' => 'A'],
+		['browser' => 'Safari 2.0', 'platform' => 'OSX.4+', 'engine' => 'Webkit', 'version' => '419.3', 'css_grade' => 'A'],
+		['browser' => 'Safari 3.0', 'platform' => 'OSX.4+', 'engine' => 'Webkit', 'version' => '522.1', 'css_grade' => 'A'],
+		['browser' => 'OmniWeb 5.5', 'platform' => 'OSX.4+', 'engine' => 'Webkit', 'version' => '420', 'css_grade' => 'A'],
+		['browser' => 'iPod Touch / iPhone', 'platform' => 'iPod', 'engine' => 'Webkit', 'version' => '420.1', 'css_grade' => 'A'],
+		['browser' => 'S60', 'platform' => 'S60', 'engine' => 'Webkit', 'version' => '413', 'css_grade' => 'A'],
+		['browser' => 'Opera 7.0', 'platform' => 'Win 95+ / OSX.1+', 'engine' => 'Presto', 'version' => '-', 'css_grade' => 'A'],
+		['browser' => 'Opera 7.5', 'platform' => 'Win 95+ / OSX.2+', 'engine' => 'Presto', 'version' => '-', 'css_grade' => 'A'],
+		['browser' => 'Opera 8.0', 'platform' => 'Win 95+ / OSX.2+', 'engine' => 'Presto', 'version' => '-', 'css_grade' => 'A'],
+		['browser' => 'Opera 8.5', 'platform' => 'Win 95+ / OSX.2+', 'engine' => 'Presto', 'version' => '-', 'css_grade' => 'A'],
+		['browser' => 'Opera 9.0', 'platform' => 'Win 95+ / OSX.3+', 'engine' => 'Presto', 'version' => '-', 'css_grade' => 'A'],
+		['browser' => 'Opera 9.2', 'platform' => 'Win 88+ / OSX.3+', 'engine' => 'Presto', 'version' => '-', 'css_grade' => 'A'],
+		['browser' => 'Opera 9.5', 'platform' => 'Win 88+ / OSX.3+', 'engine' => 'Presto', 'version' => '-', 'css_grade' => 'A'],
+		['browser' => 'Opera for Wii', 'platform' => 'Wii', 'engine' => 'Presto', 'version' => '-', 'css_grade' => 'A'],
+		['browser' => 'Nokia N800', 'platform' => 'N800', 'engine' => 'Presto', 'version' => '-', 'css_grade' => 'A'],
+		['browser' => 'Nintendo DS browser', 'platform' => 'Nintendo DS', 'engine' => 'Presto', 'version' => '8.5', 'css_grade' => 'C/A'],
+		['browser' => 'Konqureror 3.1', 'platform' => 'KDE 3.1', 'engine' => 'KHTML', 'version' => '3.1', 'css_grade' => 'C'],
+		['browser' => 'Konqureror 3.3', 'platform' => 'KDE 3.3', 'engine' => 'KHTML', 'version' => '3.3', 'css_grade' => 'A'],
+		['browser' => 'Konqureror 3.5', 'platform' => 'KDE 3.5', 'engine' => 'KHTML', 'version' => '3.5', 'css_grade' => 'A'],
+		['browser' => 'Internet Explorer 4.5', 'platform' => 'Mac OS 8-9', 'engine' => 'Tasman', 'version' => '-', 'css_grade' => 'X'],
+		['browser' => 'Internet Explorer 5.1', 'platform' => 'Mac OS 7.6-9', 'engine' => 'Tasman', 'version' => '1', 'css_grade' => 'C'],
+		['browser' => 'Internet Explorer 5.2', 'platform' => 'Mac OS 8-X', 'engine' => 'Tasman', 'version' => '1', 'css_grade' => 'C'],
+		['browser' => 'NetFront 3.1', 'platform' => 'Embedded devices', 'engine' => 'Misc', 'version' => '-', 'css_grade' => 'C'],
+		['browser' => 'NetFront 3.4', 'platform' => 'Embedded devices', 'engine' => 'Misc', 'version' => '-', 'css_grade' => 'A'],
+		['browser' => 'Dillo 0.8', 'platform' => 'Embedded devices', 'engine' => 'Misc', 'version' => '-', 'css_grade' => 'X'],
+		['browser' => 'Links', 'platform' => 'Text only', 'engine' => 'Misc', 'version' => '-', 'css_grade' => 'X'],
+		['browser' => 'Lynx', 'platform' => 'Text only', 'engine' => 'Misc', 'version' => '-', 'css_grade' => 'X'],
+		['browser' => 'IE Mobile', 'platform' => 'Windows Mobile 6', 'engine' => 'Misc', 'version' => '-', 'css_grade' => 'C'],
+		['browser' => 'PSP browser', 'platform' => 'PSP', 'engine' => 'Misc', 'version' => '-', 'css_grade' => 'C'],
+		['browser' => 'All others', 'platform' => '-', 'engine' => 'Other browsers', 'version' => '-', 'css_grade' => 'U'],
+	];
+
+
+	$usersData = [
+		['number' => 1, 'first_name' => 'Mark', 'last_name' => 'Otto', 'username' => '@mdo', 'status' => 'success'],
+		['number' => 2, 'first_name' => 'Jacob', 'last_name' => 'Thornton', 'username' => '@fat', 'status' => 'info'],
+		['number' => 3, 'first_name' => 'Larry', 'last_name' => 'the Bird', 'username' => '@twitter', 'status' => 'warning'],
+		['number' => 4, 'first_name' => 'John', 'last_name' => 'Smith', 'username' => '@jsmith', 'status' => 'danger'],
+	];
 ?>
 <div id="content-wrapper">
 	<?= Breadcrumbs::widget([
@@ -41,7 +109,6 @@ $this->params['breadcrumbs'][] = $this->title;
 					<div class="panel-heading">
 						DataTables Advanced Tables
 					</div>
-					<!-- /.panel-heading -->
 					<div class="panel-body">
 						<div class="dataTable_wrapper">
 							<table class="table table-striped table-bordered table-hover" id="dataTables-example">
@@ -55,421 +122,26 @@ $this->params['breadcrumbs'][] = $this->title;
 									</tr>
 								</thead>
 								<tbody>
-									<tr class="odd gradeX">
-										<td>Trident</td>
-										<td>Internet Explorer 4.0</td>
-										<td>Win 95+</td>
-										<td class="center">4</td>
-										<td class="center">X</td>
+								<?php foreach ($browserData as $browser) { ?>
+									<tr class="grade<?= $browser['css_grade'] ?>">
+										<td><?= $browser['engine'] ?></td>
+										<td><?= $browser['browser'] ?></td>
+										<td><?= $browser['platform'] ?>+</td>
+										<td class="center"><?= $browser['version'] ?></td>
+										<td class="center"><?= $browser['css_grade'] ?></td>
 									</tr>
-									<tr class="even gradeC">
-										<td>Trident</td>
-										<td>Internet Explorer 5.0</td>
-										<td>Win 95+</td>
-										<td class="center">5</td>
-										<td class="center">C</td>
-									</tr>
-									<tr class="odd gradeA">
-										<td>Trident</td>
-										<td>Internet Explorer 5.5</td>
-										<td>Win 95+</td>
-										<td class="center">5.5</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="even gradeA">
-										<td>Trident</td>
-										<td>Internet Explorer 6</td>
-										<td>Win 98+</td>
-										<td class="center">6</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="odd gradeA">
-										<td>Trident</td>
-										<td>Internet Explorer 7</td>
-										<td>Win XP SP2+</td>
-										<td class="center">7</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="even gradeA">
-										<td>Trident</td>
-										<td>AOL browser (AOL desktop)</td>
-										<td>Win XP</td>
-										<td class="center">6</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Firefox 1.0</td>
-										<td>Win 98+ / OSX.2+</td>
-										<td class="center">1.7</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Firefox 1.5</td>
-										<td>Win 98+ / OSX.2+</td>
-										<td class="center">1.8</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Firefox 2.0</td>
-										<td>Win 98+ / OSX.2+</td>
-										<td class="center">1.8</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Firefox 3.0</td>
-										<td>Win 2k+ / OSX.3+</td>
-										<td class="center">1.9</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Camino 1.0</td>
-										<td>OSX.2+</td>
-										<td class="center">1.8</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Camino 1.5</td>
-										<td>OSX.3+</td>
-										<td class="center">1.8</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Netscape 7.2</td>
-										<td>Win 95+ / Mac OS 8.6-9.2</td>
-										<td class="center">1.7</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Netscape Browser 8</td>
-										<td>Win 98SE+</td>
-										<td class="center">1.7</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Netscape Navigator 9</td>
-										<td>Win 98+ / OSX.2+</td>
-										<td class="center">1.8</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Mozilla 1.0</td>
-										<td>Win 95+ / OSX.1+</td>
-										<td class="center">1</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Mozilla 1.1</td>
-										<td>Win 95+ / OSX.1+</td>
-										<td class="center">1.1</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Mozilla 1.2</td>
-										<td>Win 95+ / OSX.1+</td>
-										<td class="center">1.2</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Mozilla 1.3</td>
-										<td>Win 95+ / OSX.1+</td>
-										<td class="center">1.3</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Mozilla 1.4</td>
-										<td>Win 95+ / OSX.1+</td>
-										<td class="center">1.4</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Mozilla 1.5</td>
-										<td>Win 95+ / OSX.1+</td>
-										<td class="center">1.5</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Mozilla 1.6</td>
-										<td>Win 95+ / OSX.1+</td>
-										<td class="center">1.6</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Mozilla 1.7</td>
-										<td>Win 98+ / OSX.1+</td>
-										<td class="center">1.7</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Mozilla 1.8</td>
-										<td>Win 98+ / OSX.1+</td>
-										<td class="center">1.8</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Seamonkey 1.1</td>
-										<td>Win 98+ / OSX.2+</td>
-										<td class="center">1.8</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Gecko</td>
-										<td>Epiphany 2.20</td>
-										<td>Gnome</td>
-										<td class="center">1.8</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Webkit</td>
-										<td>Safari 1.2</td>
-										<td>OSX.3</td>
-										<td class="center">125.5</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Webkit</td>
-										<td>Safari 1.3</td>
-										<td>OSX.3</td>
-										<td class="center">312.8</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Webkit</td>
-										<td>Safari 2.0</td>
-										<td>OSX.4+</td>
-										<td class="center">419.3</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Webkit</td>
-										<td>Safari 3.0</td>
-										<td>OSX.4+</td>
-										<td class="center">522.1</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Webkit</td>
-										<td>OmniWeb 5.5</td>
-										<td>OSX.4+</td>
-										<td class="center">420</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Webkit</td>
-										<td>iPod Touch / iPhone</td>
-										<td>iPod</td>
-										<td class="center">420.1</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Webkit</td>
-										<td>S60</td>
-										<td>S60</td>
-										<td class="center">413</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Presto</td>
-										<td>Opera 7.0</td>
-										<td>Win 95+ / OSX.1+</td>
-										<td class="center">-</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Presto</td>
-										<td>Opera 7.5</td>
-										<td>Win 95+ / OSX.2+</td>
-										<td class="center">-</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Presto</td>
-										<td>Opera 8.0</td>
-										<td>Win 95+ / OSX.2+</td>
-										<td class="center">-</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Presto</td>
-										<td>Opera 8.5</td>
-										<td>Win 95+ / OSX.2+</td>
-										<td class="center">-</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Presto</td>
-										<td>Opera 9.0</td>
-										<td>Win 95+ / OSX.3+</td>
-										<td class="center">-</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Presto</td>
-										<td>Opera 9.2</td>
-										<td>Win 88+ / OSX.3+</td>
-										<td class="center">-</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Presto</td>
-										<td>Opera 9.5</td>
-										<td>Win 88+ / OSX.3+</td>
-										<td class="center">-</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Presto</td>
-										<td>Opera for Wii</td>
-										<td>Wii</td>
-										<td class="center">-</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Presto</td>
-										<td>Nokia N800</td>
-										<td>N800</td>
-										<td class="center">-</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Presto</td>
-										<td>Nintendo DS browser</td>
-										<td>Nintendo DS</td>
-										<td class="center">8.5</td>
-										<td class="center">C/A<sup>1</sup>
-										</td>
-									</tr>
-									<tr class="gradeC">
-										<td>KHTML</td>
-										<td>Konqureror 3.1</td>
-										<td>KDE 3.1</td>
-										<td class="center">3.1</td>
-										<td class="center">C</td>
-									</tr>
-									<tr class="gradeA">
-										<td>KHTML</td>
-										<td>Konqureror 3.3</td>
-										<td>KDE 3.3</td>
-										<td class="center">3.3</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeA">
-										<td>KHTML</td>
-										<td>Konqureror 3.5</td>
-										<td>KDE 3.5</td>
-										<td class="center">3.5</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeX">
-										<td>Tasman</td>
-										<td>Internet Explorer 4.5</td>
-										<td>Mac OS 8-9</td>
-										<td class="center">-</td>
-										<td class="center">X</td>
-									</tr>
-									<tr class="gradeC">
-										<td>Tasman</td>
-										<td>Internet Explorer 5.1</td>
-										<td>Mac OS 7.6-9</td>
-										<td class="center">1</td>
-										<td class="center">C</td>
-									</tr>
-									<tr class="gradeC">
-										<td>Tasman</td>
-										<td>Internet Explorer 5.2</td>
-										<td>Mac OS 8-X</td>
-										<td class="center">1</td>
-										<td class="center">C</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Misc</td>
-										<td>NetFront 3.1</td>
-										<td>Embedded devices</td>
-										<td class="center">-</td>
-										<td class="center">C</td>
-									</tr>
-									<tr class="gradeA">
-										<td>Misc</td>
-										<td>NetFront 3.4</td>
-										<td>Embedded devices</td>
-										<td class="center">-</td>
-										<td class="center">A</td>
-									</tr>
-									<tr class="gradeX">
-										<td>Misc</td>
-										<td>Dillo 0.8</td>
-										<td>Embedded devices</td>
-										<td class="center">-</td>
-										<td class="center">X</td>
-									</tr>
-									<tr class="gradeX">
-										<td>Misc</td>
-										<td>Links</td>
-										<td>Text only</td>
-										<td class="center">-</td>
-										<td class="center">X</td>
-									</tr>
-									<tr class="gradeX">
-										<td>Misc</td>
-										<td>Lynx</td>
-										<td>Text only</td>
-										<td class="center">-</td>
-										<td class="center">X</td>
-									</tr>
-									<tr class="gradeC">
-										<td>Misc</td>
-										<td>IE Mobile</td>
-										<td>Windows Mobile 6</td>
-										<td class="center">-</td>
-										<td class="center">C</td>
-									</tr>
-									<tr class="gradeC">
-										<td>Misc</td>
-										<td>PSP browser</td>
-										<td>PSP</td>
-										<td class="center">-</td>
-										<td class="center">C</td>
-									</tr>
-									<tr class="gradeU">
-										<td>Other browsers</td>
-										<td>All others</td>
-										<td>-</td>
-										<td class="center">-</td>
-										<td class="center">U</td>
-									</tr>
+								<?php } ?>
 								</tbody>
 							</table>
 						</div>
-						<!-- /.table-responsive -->
 						<div class="well">
 							<h4>DataTables Usage Information</h4>
 							<p>DataTables is a very flexible, advanced tables plugin for jQuery. In SB Admin, we are using a specialized version of DataTables built for Bootstrap 3. We have also customized the table headings to use Font Awesome icons in place of images. For complete documentation on DataTables, visit their website at <a target="_blank" href="https://datatables.net/">https://datatables.net/</a>.</p>
 							<a class="btn btn-default btn-lg btn-block" target="_blank" href="https://datatables.net/">View DataTables Documentation</a>
 						</div>
 					</div>
-					<!-- /.panel-body -->
 				</div>
-				<!-- /.panel -->
 			</div>
-			<!-- /.col-lg-12 -->
 		</div>
 		<div class="row">
 			<div class="col-lg-6">
@@ -490,24 +162,14 @@ $this->params['breadcrumbs'][] = $this->title;
 									</tr>
 								</thead>
 								<tbody>
+								<?php foreach ($usersData as $user) { ?>
 									<tr>
-										<td>1</td>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
+										<td><?= $user['number'] ?></td>
+										<td><?= $user['first_name'] ?></td>
+										<td><?= $user['last_name'] ?>+</td>
+										<td><?= $user['username'] ?>+</td>
 									</tr>
-									<tr>
-										<td>2</td>
-										<td>Jacob</td>
-										<td>Thornton</td>
-										<td>@fat</td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td>Larry</td>
-										<td>the Bird</td>
-										<td>@twitter</td>
-									</tr>
+								<?php } ?>
 								</tbody>
 							</table>
 						</div>
@@ -536,24 +198,14 @@ $this->params['breadcrumbs'][] = $this->title;
 									</tr>
 								</thead>
 								<tbody>
+								<?php foreach ($usersData as $user) { ?>
 									<tr>
-										<td>1</td>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
+										<td><?= $user['number'] ?></td>
+										<td><?= $user['first_name'] ?></td>
+										<td><?= $user['last_name'] ?>+</td>
+										<td><?= $user['username'] ?>+</td>
 									</tr>
-									<tr>
-										<td>2</td>
-										<td>Jacob</td>
-										<td>Thornton</td>
-										<td>@fat</td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td>Larry</td>
-										<td>the Bird</td>
-										<td>@twitter</td>
-									</tr>
+								<?php } ?>
 								</tbody>
 							</table>
 						</div>
@@ -584,24 +236,14 @@ $this->params['breadcrumbs'][] = $this->title;
 									</tr>
 								</thead>
 								<tbody>
+								<?php foreach ($usersData as $user) { ?>
 									<tr>
-										<td>1</td>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
+										<td><?= $user['number'] ?></td>
+										<td><?= $user['first_name'] ?></td>
+										<td><?= $user['last_name'] ?>+</td>
+										<td><?= $user['username'] ?>+</td>
 									</tr>
-									<tr>
-										<td>2</td>
-										<td>Jacob</td>
-										<td>Thornton</td>
-										<td>@fat</td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td>Larry</td>
-										<td>the Bird</td>
-										<td>@twitter</td>
-									</tr>
+								<?php } ?>
 								</tbody>
 							</table>
 						</div>
@@ -630,24 +272,14 @@ $this->params['breadcrumbs'][] = $this->title;
 									</tr>
 								</thead>
 								<tbody>
+								<?php foreach ($usersData as $user) { ?>
 									<tr>
-										<td>1</td>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
+										<td><?= $user['number'] ?></td>
+										<td><?= $user['first_name'] ?></td>
+										<td><?= $user['last_name'] ?>+</td>
+										<td><?= $user['username'] ?>+</td>
 									</tr>
-									<tr>
-										<td>2</td>
-										<td>Jacob</td>
-										<td>Thornton</td>
-										<td>@fat</td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td>Larry</td>
-										<td>the Bird</td>
-										<td>@twitter</td>
-									</tr>
+								<?php } ?>
 								</tbody>
 							</table>
 						</div>
@@ -678,24 +310,14 @@ $this->params['breadcrumbs'][] = $this->title;
 									</tr>
 								</thead>
 								<tbody>
+								<?php foreach ($usersData as $user) { ?>
 									<tr>
-										<td>1</td>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
+										<td><?= $user['number'] ?></td>
+										<td><?= $user['first_name'] ?></td>
+										<td><?= $user['last_name'] ?>+</td>
+										<td><?= $user['username'] ?>+</td>
 									</tr>
-									<tr>
-										<td>2</td>
-										<td>Jacob</td>
-										<td>Thornton</td>
-										<td>@fat</td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td>Larry</td>
-										<td>the Bird</td>
-										<td>@twitter</td>
-									</tr>
+								<?php } ?>
 								</tbody>
 							</table>
 						</div>
@@ -724,30 +346,14 @@ $this->params['breadcrumbs'][] = $this->title;
 									</tr>
 								</thead>
 								<tbody>
-									<tr class="success">
-										<td>1</td>
-										<td>Mark</td>
-										<td>Otto</td>
-										<td>@mdo</td>
+								<?php foreach ($usersData as $user) { ?>
+									<tr class="<?= $user['status'] ?>">
+										<td><?= $user['number'] ?></td>
+										<td><?= $user['first_name'] ?></td>
+										<td><?= $user['last_name'] ?>+</td>
+										<td><?= $user['username'] ?>+</td>
 									</tr>
-									<tr class="info">
-										<td>2</td>
-										<td>Jacob</td>
-										<td>Thornton</td>
-										<td>@fat</td>
-									</tr>
-									<tr class="warning">
-										<td>3</td>
-										<td>Larry</td>
-										<td>the Bird</td>
-										<td>@twitter</td>
-									</tr>
-									<tr class="danger">
-										<td>4</td>
-										<td>John</td>
-										<td>Smith</td>
-										<td>@jsmith</td>
-									</tr>
+								<?php } ?>
 								</tbody>
 							</table>
 						</div>
