@@ -13,63 +13,17 @@ use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
 
 // load assets...
-p2made\assets\JqueryAsset::register($this);
-p2made\assets\BootstrapAsset::register($this);
-p2made\assets\BootstrapPluginAsset::register($this);
-p2made\assets\FontAwesomeAsset::register($this);
-p2made\assets\JuiAsset::register($this);
+p2made\demo\assets\ThingsDemoAsset::register($this);
 
 p2made\assets\TimelineAsset::register($this);
 p2made\assets\MorrisAsset::register($this);
-p2made\demo\assets\ThingsDemoAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
 p2made\demo\assets\MorrisDemoData::register($this);
 
 /* @var $this yii\web\View */
+
 $this->title = 'P2Y2Things';
-//$this->title = 'My Yii Application';
-
-/*
-yii\web\YiiAsset::register($this);
-
-p2made\demo\assets\ThingsDemoAsset::register($this);
-p2made\demo\assets\ThingsDemoAsset::register($this);
-
-p2made\assets\AnimateAsset::register($this);
-p2made\assets\BootstrapAsset::register($this);
-p2made\assets\BootstrapPluginAsset::register($this);
-p2made\assets\BootstrapSocialAsset::register($this);
-p2made\assets\BootstrapSweetalertAsset::register($this);
-p2made\assets\BootstrapSwitchAsset::register($this);
-p2made\assets\DataTablesAsset::register($this);
-p2made\assets\ExcanvasAsset::register($this);
-p2made\assets\FlagIconCssAsset::register($this);
-p2made\assets\FitvidsAsset::register($this);
-p2made\assets\FlotChartsAsset::register($this);
-p2made\assets\FontAwesomeAsset::register($this);
-p2made\assets\FullCalendarAsset::register($this);
-p2made\assets\GMapsAsset::register($this);
-p2made\assets\HolderAsset::register($this);
-p2made\assets\IsotopeAsset::register($this);
-p2made\assets\JqueryAsset::register($this);
-p2made\assets\JqueryCountToAsset::register($this);
-p2made\assets\JqueryMigrateAsset::register($this);
-p2made\assets\JuiAsset::register($this);
-p2made\assets\MasonryAsset::register($this);
-p2made\assets\MetisMenuAsset::register($this);
-p2made\assets\MomentAsset::register($this);
-p2made\assets\MomentTimezoneAsset::register($this);
-p2made\assets\MorrisAsset::register($this);
-p2made\assets\PrettyPhotoAsset::register($this);
-p2made\assets\RaphaelAsset::register($this);
-p2made\assets\SweetAlertAsset::register($this);
-p2made\assets\TimelineAsset::register($this);
-p2made\assets\WowAsset::register($this);
-
-p2made\assets\Html5shivAsset::register($this);
-p2made\assets\PrintShivAsset::register($this);
- */
 ?>
 <div class="site-index">
 
