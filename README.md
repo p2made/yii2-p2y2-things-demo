@@ -1,5 +1,5 @@
-P2Y2Things Demo v1.3.9
-======================
+P2Y2Things Demo v1.3.10
+=======================
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
 [![Total Downloads](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/downloads)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
