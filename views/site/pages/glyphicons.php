@@ -83,7 +83,9 @@ $glyphicons = [
 						<div class="row">
 						<?php foreach ($glyphicons as $icon) { ?>
 							<div class="fa col-md-4">
-								<p><i class="glyphicon glyphicon-<?= $icon ?> fa-fw"></i> glyphicon-<?= $icon ?></p><br>
+								<p><?= Html::tag('i', '', [
+									'class' => 'glyphicon glyphicon-' . $icon . ' fa-fw'
+								]) . ' glyphicon-' . $icon ?></p><br>
 							</div>
 						<?php } ?>
 						</div>
