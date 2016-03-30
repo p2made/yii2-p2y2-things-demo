@@ -20,7 +20,6 @@ class ThingsDemoAsset extends \yii\web\AssetBundle
 
 	public $depends = [
 		'p2made\assets\BootstrapAsset',
-		'p2made\assets\BootstrapPluginAsset',
 		'p2made\assets\FontAwesomeAsset',
 	];
 }
