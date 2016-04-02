@@ -13,13 +13,6 @@ use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
 
 // load assets...
-p2made\assets\JqueryAsset::register($this);
-p2made\assets\BootstrapAsset::register($this);
-p2made\assets\BootstrapPluginAsset::register($this);
-p2made\assets\FontAwesomeAsset::register($this);
-p2made\assets\JuiAsset::register($this);
-
-p2made\demo\assets\ThingsDemoAsset::register($this);
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
@@ -31,25 +24,19 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="site-signup">
 	<div class="row">
 		<div class="col-lg-4 col-lg-offset-4">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h2 class="panel-title"><?= Html::encode($this->title) ?></h2>
-				</div>
-				<div class="panel-body">
+			<h3 class="text-center">Please fill out the following fields to signup:</h3>
 
-					<p>Please fill out the following fields to signup:</p>
-
-					<?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
-						<?= $form->field($model, 'username') ?>
-						<?= $form->field($model, 'email') ?>
-						<?= $form->field($model, 'password')->passwordInput() ?>
-						<div class="form-group">
-							<?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
-						</div>
-					<?php ActiveForm::end(); ?>
-
-				</div>
+			<div class="well">
+				<?php $form = ActiveForm::begin(['id' => 'form-signup']); ?>
+					<?= $form->field($model, 'username') ?>
+					<?= $form->field($model, 'email') ?>
+					<?= $form->field($model, 'password')->passwordInput() ?>
+					<div class="form-group">
+						<?= Html::submitButton('Signup', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
+					</div>
+				<?php ActiveForm::end(); ?>
 			</div>
+
 		</div>
 	</div>
 </div>

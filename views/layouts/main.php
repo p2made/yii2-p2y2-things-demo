@@ -12,12 +12,12 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use p2made\widgets\Alert;
-use p2made\widgets\FA;
+use p2made\helpers\FA;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-yii\web\YiiAsset::register($this);
+p2made\demo\assets\ThingsDemoAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -33,7 +33,7 @@ yii\web\YiiAsset::register($this);
 <?php $this->beginBody() ?>
 
 	<div class="wrap">
-<?= $this->render('navigation.php', []) ?>
+<?= $this->render('_navigation.php', []) ?>
 
 		<div class="container">
 <?= Alert::widget() ?>
@@ -41,7 +41,7 @@ yii\web\YiiAsset::register($this);
 		</div>
 	</div>
 
-<?= $this->render('footer.php', []) ?>
+<?= $this->render('_footer.php', []) ?>
 
 <?php $this->endBody() ?>
 </body>

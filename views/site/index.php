@@ -13,8 +13,6 @@ use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
 
 // load assets...
-p2made\demo\assets\ThingsDemoAsset::register($this);
-
 p2made\assets\TimelineAsset::register($this);
 p2made\assets\MorrisAsset::register($this);
 

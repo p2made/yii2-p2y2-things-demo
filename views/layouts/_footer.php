@@ -9,7 +9,7 @@
  */
 
 use yii\helpers\Html;
-use p2made\widgets\FA;
+use p2made\helpers\FA;
 
 /* @var $this \yii\web\View */
 

@@ -10,7 +10,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
-use p2made\widgets\FA;
+use p2made\helpers\FA;
 
 // load assets...
 p2made\demo\assets\ThingsDemoAsset::register($this);

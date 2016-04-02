@@ -12,7 +12,7 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use p2made\widgets\FA;
+use p2made\helpers\FA;
 use p2made\widgets\Alert;
 
 /* @var $this \yii\web\View */
@@ -36,6 +36,8 @@ use p2made\widgets\Alert;
 			['label' => 'Morris.js Charts', 'url' => ['/site/page', 'view' => 'morris']],
 		]],
 		['label' => 'Demos', 'items' => [
+			['label' => 'is.gd', 'url' => ['/site/page', 'view' => 'is-gd']],
+			['label' => 'UUID', 'url' => ['/site/page', 'view' => 'uuid']],
 			['label' => 'Tables', 'url' => ['/site/page', 'view' => 'tables']],
 			['label' => 'Forms', 'url' => ['/site/page', 'view' => 'forms']],
 			['label' => 'Calendar', 'url' => ['/site/page', 'view' => 'calendar']],
@@ -50,6 +52,7 @@ use p2made\widgets\Alert;
 		]],
 		['label' => 'Icons', 'items' => [
 			['label' => 'Font Awesome', 'url' => ['/site/page', 'view' => 'font-awesome']],
+			['label' => 'Bootstrap Social', 'url' => ['/site/page', 'view' => 'bootstrap-social']],
 			['label' => 'Glyphicons', 'url' => ['/site/page', 'view' => 'glyphicons']],
 			['label' => 'Flag Icons', 'url' => ['/site/page', 'view' => 'flag-icons']],
 		]],
@@ -66,10 +69,6 @@ use p2made\widgets\Alert;
 
 		['label' => '... in progress', 'items' => [
 			['label' => 'Animate.css', 'url' => ['/site/page', 'view' => 'animate']],
-			['label' => 'Bootstrap Social', 'url' => ['/site/page', 'view' => 'bootstrap-social']],
-			['label' => 'Font Awesome', 'url' => ['/site/page', 'view' => 'font-awesome']],
-			['label' => 'is.gd', 'url' => ['/site/page', 'view' => 'is-gd']],
-			['label' => 'UUID', 'url' => ['/site/page', 'view' => 'uuid']],
 		//	['label' => 'SweetAlert', 'url' => ['/site/page', 'view' => 'sweetalert']],
 		]],
 	];

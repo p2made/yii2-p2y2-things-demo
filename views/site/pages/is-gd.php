@@ -13,12 +13,6 @@ use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
 
 // load assets...
-p2made\assets\JqueryAsset::register($this);
-p2made\assets\BootstrapAsset::register($this);
-p2made\assets\BootstrapPluginAsset::register($this);
-p2made\assets\FontAwesomeAsset::register($this);
-p2made\assets\JuiAsset::register($this);
-
 p2made\demo\assets\ThingsDemoAsset::register($this);
 
 /* @var $this yii\web\View */
@@ -26,7 +20,7 @@ $this->title = 'is.gd';
 $this->params['breadcrumbs'][] = $this->title;
 
 $sampleUrl = 'http://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&q=louth&sll=53.800651,-4.064941&sspn=33.219383,38.803711&ie=UTF8&hq=&hnear=Louth,+United+Kingdom&ll=53.370272,-0.004034&spn=0.064883,0.075788&z=14';
-$shortenedUrl = \p2made\helpers\IsGdHelpers::shortenUrl($sampleUrl);
+$shortenedUrl = \p2made\helpers\IsGd::shortenUrl($sampleUrl);
 ?>
 <div class="site-index">
 	<?= Breadcrumbs::widget([
@@ -53,11 +47,23 @@ $shortenedUrl = \p2made\helpers\IsGdHelpers::shortenUrl($sampleUrl);
 			<div class="col-lg-10">
 				<p><a href="<?= $shortenedUrl ?>" target="_blank"><?= $shortenedUrl ?></a></p>
 			</div>
-		</div>
-		<div class="row">
 			<div class="col-lg-offset-2 col-lg-10">
-				<p>Line breaks in source URL for better screen presentation only, &amp; <strong>not</strong> part of the URL submitted for shortening.</p>
+				<p>Line breaks in source URL are only for better screen presentation, &amp; <strong>not</strong> part of the URL submitted for shortening.</p>
 			</div>
+			<div class="col-lg-2 text-right">
+				<p><strong>Usage:</strong></p>
+			</div>
+			<div class="col-lg-10">
+				<p><code>$shortenedUrl = \p2made\helpers\IsGd::shortenUrl($sampleUrl);</code></p>
+			</div>
+			<div class="col-lg-2 text-right">
+				<p><strong>Be considerate:</strong></p>
+			</div>
+			<div class="col-lg-10">
+				<p>Save shortened links to your application database so they don't have to be shortened again.</p>
+			</div>
+		<div class="row">
+		</div>
 		</div>
 	</section>
 
