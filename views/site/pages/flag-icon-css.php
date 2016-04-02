@@ -1,6 +1,6 @@
 <?php
 /**
- * bootstrap-social.php
+ * flag-icon-css.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -12,6 +12,19 @@ use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
 use p2made\helpers\FA;
 use p2made\helpers\BSocial;
+
+/**
+ * Use this helper with...
+ *
+ * use p2made\helpers\BSocial;
+ * ...
+ * echo BSocial::method([$params]);
+ *
+ * or
+ *
+ * echo \p2made\helpers\BSocial::method([$params]);
+ */
+
 
 // load assets...
 p2made\assets\BootstrapSocialAsset::register($this);
