@@ -89,10 +89,10 @@ $socialIcons = array(
 					<?php foreach ($socialIcons as $socialIcon) { ?>
 						<div class="row">
 							<div class="col-md-8">
-								<code>BSocial::a('<?= $socialIcon ?>')->noBlock()</code><br class="clearfix">
+								<code>BSocial::nb('<?= $socialIcon ?>')</code><br class="clearfix">
 							</div>
 							<div class="col-md-4">
-								<?= BSocial::a($socialIcon)->noBlock() ?><br class="clearfix"><br>
+								<?= BSocial::nb($socialIcon) ?><br class="clearfix"><br>
 							</div>
 						</div>
 					<?php } ?>
@@ -109,10 +109,10 @@ $socialIcons = array(
 				<div class="col-md-3">
 					<div class="row">
 						<div class="col-md-10">
-							<code>BSocial::aIcon('<?= $socialIcon ?>')</code><br class="clearfix">
+							<code>BSocial::i('<?= $socialIcon ?>')</code><br class="clearfix">
 						</div>
 						<div class="col-md-2">
-							<?= BSocial::aIcon($socialIcon) ?><br class="clearfix"><br>
+							<?= BSocial::i($socialIcon) ?><br class="clearfix"><br>
 						</div>
 					</div>
 				</div>
@@ -163,18 +163,18 @@ $socialIcons = array(
 			<div class="col-md-6">
 				<div class="row">
 					<div class="col-md-8">
-						<code>BSocial::a('github')->icon()->size('lg')</code><br class="clearfix">
+						<code>BSocial::i('github')->size('lg')</code><br class="clearfix">
 					</div>
 					<div class="col-md-2">
-						<?= BSocial::a('github')->icon()->size(BSocial::SIZE_LARGE) ?><br class="clearfix"><br>
+						<?= BSocial::i('github')->size(BSocial::SIZE_LARGE) ?><br class="clearfix"><br>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-8">
-						<code>BSocial::a('github')->icon()</code><br class="clearfix">
+						<code>BSocial::i('github')</code><br class="clearfix">
 					</div>
 					<div class="col-md-2">
-						<?= BSocial::a('github')->icon() ?><br class="clearfix"><br>
+						<?= BSocial::i('github') ?><br class="clearfix"><br>
 					</div>
 				</div>
 				<div class="row">
@@ -182,7 +182,7 @@ $socialIcons = array(
 						<code>BSocial::a('github')->size('sm')->icon()</code><br class="clearfix">
 					</div>
 					<div class="col-md-2">
-						<?= BSocial::a('github')->size(BSocial::SIZE_SMALL)->icon() ?><br class="clearfix"><br>
+						<?= BSocial::i('github')->size(BSocial::SIZE_SMALL) ?><br class="clearfix"><br>
 					</div>
 				</div>
 				<div class="row">
@@ -190,7 +190,7 @@ $socialIcons = array(
 						<code>BSocial::a('github')->size('xs')->icon()</code><br class="clearfix">
 					</div>
 					<div class="col-md-2">
-						<?= BSocial::a('github')->size(BSocial::SIZE_XSMALL)->icon() ?><br class="clearfix"><br>
+						<?= BSocial::i('github')->size(BSocial::SIZE_XSMALL) ?><br class="clearfix"><br>
 					</div>
 				</div>
 			</div>
@@ -223,21 +223,76 @@ $socialIcons = array(
 			<div class="col-md-6">
 				<div class="row">
 					<div class="col-md-6">
-						<code>BSocial::button('github')</code><br class="clearfix">
+						<code>BSocial::b('github')</code><br class="clearfix">
 					</div>
 					<div class="col-md-6">
-						<?= BSocial::button('github') ?><br class="clearfix">
+						<?= BSocial::b('github') ?><br class="clearfix">
 					</div>
 				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-6">
+						<code>BSocial::bi('github')</code><br class="clearfix">
+					</div>
+					<div class="col-md-6">
+						<?= BSocial::bi('github') ?><br class="clearfix">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12">
+				<h4 class="text-center">in different sizes</h4>
 			</div>
 
 			<div class="col-md-6">
 				<div class="row">
 					<div class="col-md-6">
-						<code>BSocial::buttonIcon('github')</code><br class="clearfix">
+						<code>BSocial::b('github')->size('lg')</code><br class="clearfix">
 					</div>
 					<div class="col-md-6">
-						<?= BSocial::buttonIcon('github') ?><br class="clearfix">
+						<?= BSocial::b('github')->size(BSocial::SIZE_LARGE) ?><br class="clearfix">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<code>BSocial::b('github')->size('xs')</code><br class="clearfix">
+					</div>
+					<div class="col-md-6">
+						<?= BSocial::b('github')->size(BSocial::SIZE_XSMALL) ?><br class="clearfix">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-8">
+						<code>BSocial::i('github')->size('lg')</code><br class="clearfix">
+					</div>
+					<div class="col-md-2">
+						<?= BSocial::i('github')->size(BSocial::SIZE_LARGE) ?><br class="clearfix"><br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<code>BSocial::b('github')->size('xs')->icon()</code><br class="clearfix">
+					</div>
+					<div class="col-md-2">
+						<?= BSocial::i('github')->size(BSocial::SIZE_XSMALL) ?><br class="clearfix"><br>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12">
+				<h4 class="text-center">&amp; with custom captions</h4>
+			</div>
+
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-7">
+						<code>BSocial::b('github')->caption('Use @@@ to log in to our awesome site!')</code><br class="clearfix">
+					</div>
+					<div class="col-md-5">
+						<?= BSocial::b('github')->caption('Use @@@ to log in to our awesome site!') ?><br class="clearfix">
 					</div>
 				</div>
 			</div>

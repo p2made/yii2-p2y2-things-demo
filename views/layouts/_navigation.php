@@ -52,6 +52,7 @@ use p2made\widgets\Alert;
 		]],
 		['label' => 'Icons', 'items' => [
 			['label' => 'Font Awesome', 'url' => ['/site/page', 'view' => 'font-awesome']],
+			['label' => 'Font Awesome Examples', 'url' => ['/site/page', 'view' => 'font-awesome-examples']],
 			['label' => 'Bootstrap Social', 'url' => ['/site/page', 'view' => 'bootstrap-social']],
 			['label' => 'Glyphicons', 'url' => ['/site/page', 'view' => 'glyphicons']],
 			['label' => 'Flag Icons', 'url' => ['/site/page', 'view' => 'flag-icons']],

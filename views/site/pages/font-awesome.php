@@ -80,7 +80,7 @@ $_iconGroups = array(
 
 	<div class="body-content">
 
-		<p>Here is <a href="http://fontawesome.io" target="_blank">Font Awesome <?= FA::icon('external-link') ?></a> and <a href="https://github.com/rmrevin/yii2-fontawesome" target="_blank">rmrevin/yii2-fontawesome <?= FA::icon('external-link') ?></a> bundled for easy use in your <a href="http://www.yiiframework.com" target="_blank">Yii2 <?= FA::icon('external-link') ?></a> projects. I have subclassed the yii2-fontawesome classes to map to the p2made namespace. I have not copied or modified any of the code, and it works exactly the same. It is simply a convenience to myself that I have one less namespace to work with. All credit for yii2-fontawesome remains with <a href="https://github.com/rmrevin" target="_blank">rmrevin <?= FA::icon('external-link') ?></a></p>
+		<p>Here is <a href="http://fontawesome.io" target="_blank">Font Awesome <?= FA::i('external-link') ?></a> and <a href="https://github.com/rmrevin/yii2-fontawesome" target="_blank">rmrevin/yii2-fontawesome <?= FA::i('external-link') ?></a> bundled for easy use in your <a href="http://www.yiiframework.com" target="_blank">Yii2 <?= FA::i('external-link') ?></a> projects. I have subclassed the yii2-fontawesome classes to map to the p2made namespace. I have not copied or modified any of the code, and it works exactly the same. It is simply a convenience to myself that I have one less namespace to work with. All credit for yii2-fontawesome remains with <a href="https://github.com/rmrevin" target="_blank">rmrevin <?= FA::i('external-link') ?></a></p>
 
 		<?php
 			$groupId = 'web-application';
@@ -95,8 +95,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -118,8 +118,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -141,8 +141,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -164,8 +164,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -187,8 +187,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -210,8 +210,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -231,8 +231,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth()->spin() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')->spin()') ?><br>
+								<?= FA::i($icon)->fixedWidth()->spin() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')->spin()') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -254,8 +254,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -277,8 +277,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -300,8 +300,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -323,8 +323,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -346,8 +346,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -369,8 +369,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -392,8 +392,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -415,8 +415,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
@@ -447,8 +447,8 @@ $_iconGroups = array(
 					<?php foreach ($icons as $icon) { ?>
 						<div class="fa-hover col-md-3">
 							<p>
-								<?= FA::icon($icon)->fixedWidth() ?>
-								<?= Html::encode('FA::icon(\'' . $icon . '\')') ?><br>
+								<?= FA::i($icon)->fixedWidth() ?>
+								<?= Html::encode('FA::i(\'' . $icon . '\')') ?><br>
 							</p>
 						</div>
 					<?php } ?>
