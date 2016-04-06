@@ -12,6 +12,8 @@ use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
 
+use p2made\helpers\FA;
+
 // load assets...
 p2made\assets\TimelineAsset::register($this);
 p2made\assets\MorrisAsset::register($this);
@@ -567,5 +569,12 @@ $this->title = 'P2Y2Things';
 		</div><!-- /.col-lg-4 -->
 	</div><!-- /.row -->
 
-	<p><code><?= __FILE__ ?></code></p>
+	<!-- this goes on every site file in p2made demos -->
+	<br><div class="alert alert-success" role="alert">
+		<ul class="fa-ul">
+			<li>
+				<?= FA::fw('code')->li()->size(FA::SIZE_LARGE) . '<code>' . __FILE__ . '</code>' ?>
+			</li>
+		</ul>
+	</div>
 </div><!-- /#content-wrapper -->

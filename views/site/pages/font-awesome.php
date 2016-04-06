@@ -74,7 +74,7 @@ $_iconGroups = array(
 	]) ?>
 
 	<div class="jumbotron">
-		<h1><?= Html::encode($this->title) ?></h1>
+		<h1><?= FA::i('flag') . ' ' . Html::encode($this->title) ?></h1>
 		The iconic font and CSS toolkit
 	</div>
 
@@ -457,5 +457,14 @@ $_iconGroups = array(
 			</div>
 		</section>
 
+	</div>
+
+	<!-- this goes on every site file in p2made demos -->
+	<br><div class="alert alert-success" role="alert">
+		<ul class="fa-ul">
+			<li>
+				<?= FA::fw('code')->li()->size(FA::SIZE_LARGE) . '<code>' . __FILE__ . '</code>' ?>
+			</li>
+		</ul>
 	</div>
 </div><!-- /#content-wrapper -->

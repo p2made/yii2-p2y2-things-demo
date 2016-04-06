@@ -43,5 +43,12 @@ $this->params['breadcrumbs'][] = $this->title;
 		</div>
 	</div>
 
-	<p><code><?= __FILE__ ?></code></p>
+	<!-- this goes on every site file in p2made demos -->
+	<br><div class="alert alert-success" role="alert">
+		<ul class="fa-ul">
+			<li>
+				<?= FA::fw('code')->li()->size(FA::SIZE_LARGE) . '<code>' . __FILE__ . '</code>' ?>
+			</li>
+		</ul>
+	</div>
 </div>

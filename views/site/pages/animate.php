@@ -236,5 +236,12 @@ p2made\assets\WowAsset::register($this);
 <script>
 </script>
 
-	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
+	<!-- this goes on every site file in p2made demos -->
+	<br><div class="alert alert-success" role="alert">
+		<ul class="fa-ul">
+			<li>
+				<?= FA::fw('code')->li()->size(FA::SIZE_LARGE) . '<code>' . __FILE__ . '</code>' ?>
+			</li>
+		</ul>
+	</div>
 </div><!-- /#site-index -->
