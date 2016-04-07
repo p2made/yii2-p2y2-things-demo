@@ -21,6 +21,10 @@ p2made\assets\BootstrapSocialAsset::register($this);
 $this->title = 'Bootstrap Social';
 $this->params['breadcrumbs'][] = $this->title;
 
+/**
+ * Putting demo data as arrays of constants to provide examples
+ * of accessing all the social network name constants.
+ */
 $socialIcons = array(
 	BSocial::ADN,
 	BSocial::BITBUCKET,
@@ -44,6 +48,18 @@ $socialIcons = array(
 	BSocial::VK,
 	BSocial::YAHOO,
 );
+
+$sizes = array(
+	BSocial::SIZE_LARGE,
+	BSocial::SIZE_SMALL,
+	BSocial::SIZE_XSMALL,
+/**
+ * End of demo data
+ */
+);
+/**
+ * End of demo data
+ */
 ?>
 <div class="site-index">
 	<?= Breadcrumbs::widget([
