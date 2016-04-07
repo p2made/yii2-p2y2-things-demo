@@ -49,7 +49,7 @@ $wrappers = array(
 	'col-sm-2 col-xs-3', 'col-sm-2 col-xs-3', 'col-sm-2 col-xs-3', 'col-sm-2 col-xs-3',
 	'col-sm-2 col-xs-3', 'col-sm-2 col-xs-3', 'col-sm-2 col-xs-3', 'col-sm-2 col-xs-3 hidden-xs',
 	'col-sm-2 col-xs-3', 'col-sm-2 col-xs-3', 'col-sm-2 col-xs-3 visible-lg'
-);,
+);
 ?>
 <div class="site-index">
 	<?= Breadcrumbs::widget([
