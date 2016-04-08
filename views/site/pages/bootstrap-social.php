@@ -53,9 +53,6 @@ $sizes = array(
 	BSocial::SIZE_LARGE,
 	BSocial::SIZE_SMALL,
 	BSocial::SIZE_XSMALL,
-/**
- * End of demo data
- */
 );
 /**
  * End of demo data
@@ -83,7 +80,7 @@ $sizes = array(
 	<div class="body-content">
 
 		<p>
-		Here is <a href="https://lipis.github.io/bootstrap-social/" target="_blank">Bootstrap Social<?= FA::icon('external-link') ?></a> as helpers for <a href="http://www.yiiframework.com" target="_blank">Yii2 <?= FA::icon('external-link') ?></a>. Modeled on <a href="https://github.com/rmrevin/yii2-fontawesome" target="_blank">rmrevin/yii2-fontawesome <?= FA::icon('external-link') ?></a> and working in much the same way.
+		Here is <a href="https://lipis.github.io/bootstrap-social/" target="_blank">Bootstrap Social <?= FA::icon(FA::_EXTERNAL_LINK) ?></a> as helpers for <a href="http://www.yiiframework.com" target="_blank">Yii2 <?= FA::icon(FA::_EXTERNAL_LINK) ?></a>. Modeled on <a href="https://github.com/rmrevin/yii2-fontawesome" target="_blank">rmrevin/yii2-fontawesome <?= FA::icon(FA::_EXTERNAL_LINK) ?></a> and working in much the same way.
 		</p>
 
 		<div class="row">
@@ -116,10 +113,10 @@ $sizes = array(
 
 					<?php foreach ($socialIcons as $socialIcon) { ?>
 						<div class="row">
-							<div class="col-md-8">
+							<div class="col-md-6">
 								<code>BSocial::nb('<?= $socialIcon ?>')</code><br class="clearfix">
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-6">
 								<?= BSocial::nb($socialIcon) ?><br class="clearfix"><br>
 							</div>
 						</div>
@@ -260,10 +257,10 @@ $sizes = array(
 			</div>
 			<div class="col-md-6">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-8">
 						<code>BSocial::bi('github')</code><br class="clearfix">
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-2">
 						<?= BSocial::bi('github') ?><br class="clearfix">
 					</div>
 				</div>
@@ -294,18 +291,18 @@ $sizes = array(
 			<div class="col-md-6">
 				<div class="row">
 					<div class="col-md-8">
-						<code>BSocial::i('github')->size('lg')</code><br class="clearfix">
+						<code>BSocial::bi('github')->size('lg')</code><br class="clearfix">
 					</div>
 					<div class="col-md-2">
-						<?= BSocial::i('github')->size(BSocial::SIZE_LARGE) ?><br class="clearfix"><br>
+						<?= BSocial::bi('github')->size(BSocial::SIZE_LARGE) ?><br class="clearfix"><br>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-8">
-						<code>BSocial::b('github')->size('xs')->icon()</code><br class="clearfix">
+						<code>BSocial::bi('github')->size('xs')</code><br class="clearfix">
 					</div>
 					<div class="col-md-2">
-						<?= BSocial::i('github')->size(BSocial::SIZE_XSMALL) ?><br class="clearfix"><br>
+						<?= BSocial::bi('github')->size(BSocial::SIZE_XSMALL) ?><br class="clearfix"><br>
 					</div>
 				</div>
 			</div>
@@ -329,14 +326,11 @@ $sizes = array(
 
 	</div>
 
-<script>
-</script>
-
 	<!-- this goes on every site file in p2made demos -->
 	<br><div class="alert alert-success" role="alert">
 		<ul class="fa-ul">
 			<li>
-				<?= FA::fw('code')->li()->size(FA::SIZE_LARGE) . '<code>' . __FILE__ . '</code>' ?>
+				<?= FA::fw(FA::_CODE)->li()->size(FA::SIZE_LARGE) ?> <code><?= __FILE__ ?></code>
 			</li>
 		</ul>
 	</div>

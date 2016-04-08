@@ -8,7 +8,7 @@
  * @license MIT
  */
 
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
 

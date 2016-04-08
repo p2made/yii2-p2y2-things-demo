@@ -20,8 +20,4 @@ class FlagIconsDemoAsset extends \yii\web\AssetBundle
 	public $js = [
 		'js/flag-icon-demo.js',
 	];
-
-	public $depends = [
-		'p2made\demo\assets\ThingsDemoAsset',
-	];
 }

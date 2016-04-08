@@ -8,7 +8,7 @@
  * @license MIT
  */
 
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
 use p2made\helpers\Uuid;
 
@@ -103,7 +103,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	<br><div class="alert alert-success" role="alert">
 		<ul class="fa-ul">
 			<li>
-				<?= FA::fw('code')->li()->size(FA::SIZE_LARGE) . '<code>' . __FILE__ . '</code>' ?>
+				<?= FA::fw(FA::_CODE)->li()->size(FA::SIZE_LARGE) ?> <code><?= __FILE__ ?></code>
 			</li>
 		</ul>
 	</div>

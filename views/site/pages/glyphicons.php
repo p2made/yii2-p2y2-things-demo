@@ -8,7 +8,7 @@
  * @license MIT
  */
 
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
 use p2made\helpers\FA;
 
@@ -311,7 +311,7 @@ $sizes = array(
 		<h1><?= Html::encode($this->title) ?></h1>
 		Icons bundled with
 		<a href="http://getbootstrap.com" target="_blank">
-			Bootstrap <?= FA::icon('external-link') ?>
+			Bootstrap <?= FA::icon(FA::_EXTERNAL_LINK) ?>
 		</a>.
 	</div>
 

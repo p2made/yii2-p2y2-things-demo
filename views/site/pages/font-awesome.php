@@ -8,7 +8,7 @@
  * @license MIT
  */
 
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
 use p2made\helpers\FA;
 
@@ -925,7 +925,7 @@ $iconGroups = array(
 
 	<div class="body-content">
 
-		<p>Here is <a href="http://fontawesome.io" target="_blank">Font Awesome <?= FA::i('external-link') ?></a> and <a href="https://github.com/rmrevin/yii2-fontawesome" target="_blank">rmrevin/yii2-fontawesome <?= FA::i('external-link') ?></a> bundled for easy use in your <a href="http://www.yiiframework.com" target="_blank">Yii2 <?= FA::i('external-link') ?></a> projects. I have subclassed the yii2-fontawesome classes to map to the p2made namespace. I have not copied or modified any of the code, and it works exactly the same. It is simply a convenience to myself that I have one less namespace to work with. All credit for yii2-fontawesome remains with <a href="https://github.com/rmrevin" target="_blank">rmrevin <?= FA::i('external-link') ?></a></p>
+		<p>Here is <a href="http://fontawesome.io" target="_blank">Font Awesome <?= FA::i(FA::icon(FA::_EXTERNAL_LINK)) ?></a> and <a href="https://github.com/rmrevin/yii2-fontawesome" target="_blank">rmrevin/yii2-fontawesome <?= FA::i(FA::icon(FA::_EXTERNAL_LINK)) ?></a> bundled for easy use in your <a href="http://www.yiiframework.com" target="_blank">Yii2 <?= FA::i(FA::icon(FA::_EXTERNAL_LINK)) ?></a> projects. I have subclassed the yii2-fontawesome classes to map to the p2made namespace. I have not copied or modified any of the code, and it works exactly the same. It is simply a convenience to myself that I have one less namespace to work with. All credit for yii2-fontawesome remains with <a href="https://github.com/rmrevin" target="_blank">rmrevin <?= FA::i(FA::icon(FA::_EXTERNAL_LINK)) ?></a></p>
 
 		<?php
 			$groupId = 'web-application';
@@ -1308,7 +1308,7 @@ $iconGroups = array(
 	<br><div class="alert alert-success" role="alert">
 		<ul class="fa-ul">
 			<li>
-				<?= FA::fw('code')->li()->size(FA::SIZE_LARGE) . '<code>' . __FILE__ . '</code>' ?>
+				<?= FA::fw(FA::_CODE)->li()->size(FA::SIZE_LARGE) ?> <code><?= __FILE__ ?></code>
 			</li>
 		</ul>
 	</div>

@@ -10,6 +10,7 @@
 
 use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
+
 use p2made\helpers\FA;
 use p2made\helpers\FI;
 
@@ -327,20 +328,20 @@ $wrappers = array(
 	<div class="jumbotron">
 		<h1><?= FA::i('flag') . ' ' . Html::encode($this->title) ?></h1>
 
-		<p>SVG flags &amp; CSS from <a href="https://lipis.github.io/flag-icon-css/" target="_blank">flag-icon-css<?= FA::icon('external-link') ?></a> as Yii 2 assets &amp; helpers.</p>
+		<p>SVG flags &amp; CSS from <a href="https://lipis.github.io/flag-icon-css/" target="_blank">flag-icon-css<?= FA::icon(FA::_EXTERNAL_LINK) ?></a> as Yii 2 assets &amp; helpers.</p>
 	</div>
 
 	<div class="body-content">
 
 		<p>
-			Here is <a href="https://lipis.github.io/bootstrap-social/" target="_blank">Bootstrap Social<?= FA::icon('external-link') ?></a> as helpers for <a href="http://www.yiiframework.com" target="_blank">Yii2 <?= FA::icon('external-link') ?></a>. Modeled on <a href="https://github.com/rmrevin/yii2-fontawesome" target="_blank">rmrevin/yii2-fontawesome <?= FA::icon('external-link') ?></a> and working in much the same way.
+			Here is <a href="https://lipis.github.io/flag-icon-css/" target="_blank">flag-icon-css <?= FA::icon(FA::_EXTERNAL_LINK) ?></a> as helpers for <a href="http://www.yiiframework.com" target="_blank">Yii2 <?= FA::icon(FA::_EXTERNAL_LINK) ?></a>. Modeled on <a href="https://github.com/rmrevin/yii2-fontawesome" target="_blank">rmrevin/yii2-fontawesome <?= FA::icon(FA::_EXTERNAL_LINK) ?></a> and working in much the same way.
 		</p>
 
 		<section id="examples">
 			<div class="page-header">
 				<h1>Examples (inline with text)</h1>
 			</div>
-			<div class="no-wrap">
+			<div class="flag-no-wrap">
 				<?php foreach ($inlineItems as $item): ?>
 				<?= '<' . $item . '>' ?>
 					<?= $item ?>
@@ -452,7 +453,7 @@ $wrappers = array(
 	<br><div class="alert alert-success" role="alert">
 		<ul class="fa-ul">
 			<li>
-				<?= FA::fw('code')->li()->size(FA::SIZE_LARGE) . '<code>' . __FILE__ . '</code>' ?>
+				<?= FA::fw(FA::_CODE)->li()->size(FA::SIZE_LARGE) ?> <code><?= __FILE__ ?></code>
 			</li>
 		</ul>
 	</div>

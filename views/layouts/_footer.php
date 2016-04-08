@@ -8,7 +8,7 @@
  * @license MIT
  */
 
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 use p2made\helpers\FA;
 
 /* @var $this \yii\web\View */
@@ -21,13 +21,13 @@ p2made\assets\FontAwesomeAsset::register($this);
 		<p class="pull-left">
 			Crafted with <?= FA::icon('heart') ?> by Pedro fp, on the
 			<a href="https://en.wikipedia.org/wiki/Sunshine_Coast,_Queensland" target="_blank">
-				Sunshine Coast <?= FA::icon('external-link') ?>
+				Sunshine Coast <?= FA::icon(FA::_EXTERNAL_LINK) ?>
 			</a> of
 			<a href="https://en.wikipedia.org/wiki/Queensland" target="_blank">
-				Queensland <?= FA::icon('external-link') ?>
+				Queensland <?= FA::icon(FA::_EXTERNAL_LINK) ?>
 			</a>,
 			<a href="https://en.wikipedia.org/wiki/Australia" target="_blank">
-				Australia <?= FA::icon('external-link') ?>
+				Australia <?= FA::icon(FA::_EXTERNAL_LINK) ?>
 			</a>
 			<?= FA::icon('copyright') ?> <?= date('Y') ?>
 		</p>

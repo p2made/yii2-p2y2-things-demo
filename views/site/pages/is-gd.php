@@ -8,7 +8,7 @@
  * @license MIT
  */
 
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
 
@@ -71,7 +71,7 @@ $shortenedUrl = \p2made\helpers\IsGd::shortenUrl($sampleUrl);
 	<br><div class="alert alert-success" role="alert">
 		<ul class="fa-ul">
 			<li>
-				<?= FA::fw('code')->li()->size(FA::SIZE_LARGE) . '<code>' . __FILE__ . '</code>' ?>
+				<?= FA::fw(FA::_CODE)->li()->size(FA::SIZE_LARGE) ?> <code><?= __FILE__ ?></code>
 			</li>
 		</ul>
 	</div>
