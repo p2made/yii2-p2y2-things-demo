@@ -19,6 +19,6 @@ class ThingsDemoAsset extends \yii\web\AssetBundle
 	];
 
 	public $depends = [
-			'p2made\assets\P2CoreLoaderAsset',
+			'p2made\assets\P2CoreAsset',
 	];
 }

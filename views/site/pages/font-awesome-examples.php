@@ -428,6 +428,50 @@ $this->params['breadcrumbs'][] = $this->title;
 			</div>
 		</section><!-- / Bootstrap 3 Examples -->
 
+		<section id="basic">
+			<h2>Currency Extras</h2>
+			<div class="row">
+				<div class="col-md-3 col-sm-4">
+					<p>
+						<?= FA::i('p2m-aud') ?>
+						<code>FA::i('p2m-aud')</code>
+					</p>
+					<p>
+						<?= FA::i('p2m-cad') ?>
+						<code>FA::i('p2m-cad')</code>
+					</p>
+					<p>
+						<?= FA::i('p2m-nzd') ?>
+						<code>FA::i('p2m-nzd')</code>
+					</p>
+					<p>
+						<?= FA::i('p2m-usd') ?>
+						<code>FA::i('p2m-usd')</code>
+					</p>
+
+				</div>
+				<div class="col-md-8 col-sm-7">
+					<div class="alert alert-success">
+						<ul class="fa-ul">
+							<li>
+								<?= FA::fw(FA::_INFO_CIRCLE)->li()->size(FA::SIZE_LARGE) ?>
+								<em>p2made extra</em><br>
+								If you load my <code>FontAwesomeAsset</code> by using <code>P2CoreAsset</code>, then a some extra classes give country specific dollar icons. It's a bit of an experiment, the font isn't ideal, &amp; the resulting icons are wider than <code>fa-fw</code>, so <code>fw()</code> doesn't work well (&amp; is probably best avoided).
+							</li>
+						</ul>
+					</div>
+					<div class="alert alert-warning">
+						<ul class="fa-ul">
+							<li>
+								<?= FA::fw(FA::_EXCLAMATION_TRIANGLE)->li()->size(FA::SIZE_LARGE) ?>
+								<em>p2made shortcut</em><br>
+								No convenient constants for these ones... for now at least.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section><!-- / Currency Extras -->
 	</div>
 
 	<!-- this goes on every site file in p2made demos -->
