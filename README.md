@@ -1,4 +1,4 @@
-P2Y2Things Demo v1.9.0
+P2Y2Things Demo v1.9.1
 ==========
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
