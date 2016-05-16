@@ -20,12 +20,12 @@
 		"source": "https://github.com/p2made/yii2-p2y2-things-demo"
 	},
 
-	"version": "v1.9.1",
+	"version": "v1.9.2",
 	"minimum-stability": "dev",
 
 	"require": {
 		"yiisoft/yii2": ">=2.0.8",
-		"p2made/yii2-p2y2-things": "v1.9.0"
+		"p2made/yii2-p2y2-things": "v1.9.2"
 	},
 
 	"autoload": {
