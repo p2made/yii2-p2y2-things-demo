@@ -24,7 +24,7 @@
 
 	"require": {
 		"yiisoft/yii2": ">=2.0.8",
-		"p2made/yii2-p2y2-things": "dev-master"
+		"p2made/yii2-p2y2-things": "v1.9.0"
 	},
 
 	"autoload": {
