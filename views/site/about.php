@@ -10,21 +10,30 @@
 
 use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
+use p2made\helpers\FA;
 
 // load assets...
+p2made\demo\assets\ThingsDemoAsset::register($this);
 
 /* @var $this yii\web\View */
 
 $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-about">
-	<h1><?= Html::encode($this->title) ?></h1>
+<div id="content-wrapper">
 	<?= Breadcrumbs::widget([
 		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 	]) ?>
 
-	<p>This is the About page. You may modify the following file to customize its content:</p>
+	<div class="jumbotron">
+		<h1><?= Html::encode($this->title) ?></h1>
+	</div>
+
+	<div class="body-content">
+
+		<p>This is the About page. You may modify the following file to customize its content:</p>
+
+	</div>
 
 	<!-- this goes on every site file in p2made demos -->
 	<br><div class="alert alert-success" role="alert">
@@ -34,4 +43,4 @@ $this->params['breadcrumbs'][] = $this->title;
 			</li>
 		</ul>
 	</div>
-</div>
+</div><!-- /#content-wrapper -->

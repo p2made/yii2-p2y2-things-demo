@@ -10,23 +10,25 @@
 
 use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
+use p2made\helpers\FA;
 use p2made\helpers\Uuid;
 
 // load assets...
 p2made\demo\assets\ThingsDemoAsset::register($this);
 
 /* @var $this yii\web\View */
+
 $this->title = 'UUID';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-index">
+<div id="content-wrapper">
 	<?= Breadcrumbs::widget([
 		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 	]) ?>
 
 	<div class="jumbotron">
 		<h1><?= Html::encode($this->title) ?></h1>
-		<h2>Lots &amp; lots of UUIDs!</h2>
+		Lots &amp; lots of UUIDs!
 	</div>
 
 	<div class="body-content">
@@ -107,4 +109,4 @@ $this->params['breadcrumbs'][] = $this->title;
 			</li>
 		</ul>
 	</div>
-</div>
+</div><!-- /#content-wrapper -->

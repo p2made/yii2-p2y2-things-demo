@@ -13,9 +13,7 @@ use yii\widgets\Breadcrumbs;
 
 // load assets...
 p2made\demo\assets\ThingsDemoAsset::register($this);
-p2made\assets\FlotChartsAsset::register($this);
-p2made\assets\FlotTooltipAsset::register($this);
-//p2made\assets\FlotBundleAsset::register($this);
+p2made\assets\FlotBundleAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
 //p2made\demo\assets\FlotDemoAsset::register($this);
@@ -37,8 +35,6 @@ $this->params['breadcrumbs'][] = $this->title;
 	</div>
 
 	<div class="body-content">
-
-
 
 			<div class="row">
 				<div class="col-lg-12">
@@ -137,13 +133,6 @@ $this->params['breadcrumbs'][] = $this->title;
 				</div>
 				<!-- /.col-lg-6 -->
 			</div>
-
-
-
-
-
-
-
 
 	</div><!-- /.body-content -->
 

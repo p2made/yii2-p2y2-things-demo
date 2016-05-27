@@ -13,8 +13,7 @@ use yii\widgets\Breadcrumbs;
 
 // load assets...
 p2made\demo\assets\ThingsDemoAsset::register($this);
-p2made\assets\DataTablesAsset::register($this);
-p2made\assets\DataTablesResponsiveAsset::register($this);
+p2made\assets\DataTablesBundleAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
 p2made\demo\assets\DataTablesDemoAsset::register($this);

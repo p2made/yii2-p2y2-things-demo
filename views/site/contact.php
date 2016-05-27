@@ -11,6 +11,7 @@
 use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
+use p2made\helpers\FA;
 //use yii\captcha\Captcha;
 
 // load assets...
@@ -22,36 +23,43 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Contact';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-contact">
-	<h1><?= Html::encode($this->title) ?></h1>
+<div id="content-wrapper">
 	<?= Breadcrumbs::widget([
 		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 	]) ?>
 
-	<div class="row">
-		<div class="col-lg-6 col-lg-offset-3">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-				</div>
-				<div class="panel-body">
+	<div class="jumbotron">
+		<h1><?= Html::encode($this->title) ?></h1>
+	</div>
 
-					<?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
-						<?= $form->field($model, 'name') ?>
-						<?= $form->field($model, 'email') ?>
-						<?= $form->field($model, 'subject') ?>
-						<?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
-						<!--< ?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
-							'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
-						]) ?>-->
-						<div class="form-group">
-							<?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
-						</div>
-					<?php ActiveForm::end(); ?>
+	<div class="body-content">
 
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+					</div>
+					<div class="panel-body">
+
+						<?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
+							<?= $form->field($model, 'name') ?>
+							<?= $form->field($model, 'email') ?>
+							<?= $form->field($model, 'subject') ?>
+							<?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
+							<!--< ?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
+								'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
+							]) ?>-->
+							<div class="form-group">
+								<?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
+							</div>
+						<?php ActiveForm::end(); ?>
+
+					</div>
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<!-- this goes on every site file in p2made demos -->
@@ -62,4 +70,4 @@ $this->params['breadcrumbs'][] = $this->title;
 			</li>
 		</ul>
 	</div>
-</div>
+</div><!-- /#content-wrapper -->
