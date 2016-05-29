@@ -26,34 +26,13 @@ $this->params['breadcrumbs'][] = $this->title;
  * of accessing all the social network name constants.
  */
 $socialIcons = array(
-	BSocial::ADN,
-	BSocial::BITBUCKET,
-	BSocial::DROPBOX,
-	BSocial::FACEBOOK,
-	BSocial::FLICKR,
-	BSocial::FOURSQUARE,
-	BSocial::GITHUB,
-	BSocial::GOOGLE,
-	BSocial::INSTAGRAM,
-	BSocial::LINKEDIN,
-	BSocial::MICROSOFT,
-	BSocial::ODNOKLASSNIKI,
-	BSocial::OPENID,
-	BSocial::PINTEREST,
-	BSocial::REDDIT,
-	BSocial::SOUNDCLOUD,
-	BSocial::TUMBLR,
-	BSocial::TWITTER,
-	BSocial::VIMEO,
-	BSocial::VK,
-	BSocial::YAHOO,
+	BSocial::ADN, BSocial::BITBUCKET, BSocial::DROPBOX, BSocial::FACEBOOK, BSocial::FLICKR,
+	BSocial::FOURSQUARE, BSocial::GITHUB, BSocial::GOOGLE, BSocial::INSTAGRAM, BSocial::LINKEDIN,
+	BSocial::MICROSOFT, BSocial::ODNOKLASSNIKI, BSocial::OPENID, BSocial::PINTEREST,
+	BSocial::REDDIT, BSocial::SOUNDCLOUD, BSocial::TUMBLR, BSocial::TWITTER, BSocial::VIMEO,
+	BSocial::VK, BSocial::YAHOO,
 );
-
-$sizes = array(
-	BSocial::SIZE_LARGE,
-	BSocial::SIZE_SMALL,
-	BSocial::SIZE_XSMALL,
-);
+$sizes = [BSocial::SIZE_LARGE, BSocial::SIZE_SMALL, BSocial::SIZE_XSMALL];
 /**
  * End of demo data
  */

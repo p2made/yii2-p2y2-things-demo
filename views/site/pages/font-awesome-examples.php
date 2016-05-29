@@ -355,7 +355,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				<div class="col-md-9 col-sm-8">
 					<p>
 						<em>p2made shortcut</em><br>
-						That hacky class is pretty verbose so <code>FA::ban($object, $options = [])FA::_BAN</code> is a whole lot more concise for <code>FA::_BAN</code> stacks.
+						That hacky class is pretty verbose so <code>FA::ban($object, $options = [])</code> is a whole lot more concise for <code>FA::_BAN</code> stacks.
 					</p>
 					<div class="alert alert-warning">
 						<ul class="fa-ul">
