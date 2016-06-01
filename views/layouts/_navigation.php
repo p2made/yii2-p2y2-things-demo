@@ -62,11 +62,11 @@ use p2made\widgets\Alert;
 			['label' => 'About', 'url' => ['/site/about']],
 			['label' => 'Contact', 'url' => ['/site/contact']],
 			['label' => 'Blank Page', 'url' => ['/site/page', 'view' => 'blank']],
-			['label' => 'Scratchpad', 'url' => ['/site/page', 'view' => 'scratchpad']],
 		]],
 		['label' => 'Developer', 'items' => [
 			['label' => 'Gii', 'url' => ['/gii']],
 			['label' => 'Debug', 'url' => ['/debug']],
+			['label' => 'Scratchpad', 'url' => ['/site/page', 'view' => 'scratchpad']],
 		]],
 
 		['label' => '... in progress', 'items' => [

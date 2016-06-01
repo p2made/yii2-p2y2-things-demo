@@ -330,16 +330,7 @@ $this->params['breadcrumbs'][] = $this->title;
 							<li>
 								<?= FA::fw(FA::_INFO_CIRCLE)->li()->size(FA::SIZE_LARGE) ?>
 								<em>p2made shortcut</em><br>
-								The original FA classes don't allow for the larger icon in the stack to be on top like this example. My <code>FA::is($foreground, $background, $options = [])</code> class provides a hacky workaround.
-							</li>
-						</ul>
-					</div>
-					<div class="alert alert-warning">
-						<ul class="fa-ul">
-							<li>
-								<?= FA::fw(FA::_EXCLAMATION_TRIANGLE)->li()->size(FA::SIZE_LARGE) ?>
-								<em>p2made shortcut</em><br>
-								Like I said, <code>FA::is()</code> is hacky. It doesn't provide the recursion &amp; icons must be handed in fully formed. The size must be set as a class in <code>$options</code>.
+								Shortcut for a stack with the larger icon on top. No longer so hacky thanks to updates in @rmrevin's FontAwesome.
 							</li>
 						</ul>
 					</div>
@@ -355,17 +346,8 @@ $this->params['breadcrumbs'][] = $this->title;
 				<div class="col-md-9 col-sm-8">
 					<p>
 						<em>p2made shortcut</em><br>
-						That hacky class is pretty verbose so <code>FA::ban($object, $options = [])</code> is a whole lot more concise for <code>FA::_BAN</code> stacks.
+						An even shorter version for the most common use of an inverted stack, a ban icon.
 					</p>
-					<div class="alert alert-warning">
-						<ul class="fa-ul">
-							<li>
-								<?= FA::fw(FA::_EXCLAMATION_TRIANGLE)->li()->size(FA::SIZE_LARGE) ?>
-								<em>p2made shortcut</em><br>
-								It calls the first hacky effort so same limitations apply.
-							</li>
-						</ul>
-					</div>
 				</div>
 			</div>
 		</section><!-- / Stacked Icons -->

@@ -1,6 +1,6 @@
 <?php
 /**
- * blank.php
+ * scratchpad.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -10,9 +10,12 @@
 
 use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
+use p2made\helpers\FA;
 
 // load assets...
 p2made\demo\assets\ThingsDemoAsset::register($this);
+
+// DEMO ONLY _DON'T_ use this in your production copy.
 
 /* @var $this yii\web\View */
 
@@ -28,6 +31,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
 	<div class="body-content">
 
+<br><br><br>
+
 
 	</div><!-- /.body-content -->
 
@@ -36,8 +41,6 @@ $this->params['breadcrumbs'][] = $this->title;
 /*
 
  */
-
-
 
 
 ?>
