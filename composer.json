@@ -24,8 +24,8 @@
 	"minimum-stability": "dev",
 
 	"require": {
-		"yiisoft/yii2": ">=2.0.8",
-		"p2made/yii2-p2y2-things": "v1.11.1"
+		"yiisoft/yii2": ">=2.0.10",
+		"p2made/yii2-p2y2-things": ">=1.14.0"
 	},
 
 	"autoload": {
