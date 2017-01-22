@@ -71,6 +71,36 @@ To view pages in `site/pages/` you need to modify `actions()` in the `SiteContro
 	}
 ```
 
+And then...
+-----------
+
+P2Y2Things Demo uses [P2Y2Things](https://github.com/p2made/yii2-p2y2-things) which requires some Yii 2 assets to be nullified to avoid conflicts through double loading. Modify `common/config/main.php` with...
+
+```
+	'components' => [
+		'assetManager' => [
+			'bundles' => [
+				'yii\web\JqueryAsset' => [
+					'sourcePath' => null, 'js' => [],
+				],
+				'yii\bootstrap\BootstrapAsset' => [
+					'sourcePath' => null, 'css' => [],
+				],
+				'yii\bootstrap\BootstrapPluginAsset' => [
+					'sourcePath' => null, 'js' => [],
+				],
+				'yii\jui\JuiAsset' => [
+					'sourcePath' => null, 'css' => [], 'js' => [],
+				],
+				'\rmrevin\yii\fontawesome\AssetBundle' => [
+					'sourcePath' => null, 'css' => [],
+				],
+			],
+		],
+		...
+	],
+```
+
 **DO NOT** modify the views in the  `views/` folder. Your changes will be lost next time you run `composer update`.
 
 You can copy elements from these examples into your own views.
