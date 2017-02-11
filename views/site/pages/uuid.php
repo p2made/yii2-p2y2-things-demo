@@ -35,8 +35,8 @@ $this->params['breadcrumbs'][] = $this->title;
 	<div class="body-content">
 
 		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-4">
+			<div class="col-md-1"></div>
+			<div class="col-md-5">
 				<h4>Using no subdomain.</h4>
 				<p><code>\p2made\helpers\Uuid::uuid()</code></p>
 				<ul>
@@ -67,7 +67,7 @@ $this->params['breadcrumbs'][] = $this->title;
 					<li><?= Uuid::uuid() ?></li>
 				</ul>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-5">
 				<h4>Using subdomain com.example.</h4>
 				<p><code>\p2made\helpers\Uuid::uuid('com.example')</code></p>
 				<ul>

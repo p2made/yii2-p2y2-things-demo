@@ -12,6 +12,7 @@
 use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
 use yii\helpers\Url;
+use p2made\helpers\FA;
 use p2made\models\FullCalendarEvent;
 use p2made\widgets\FullCalendarWidget;
 
@@ -93,7 +94,7 @@ $events = array();
 	$newEvent->start = date("Y-m-d", mktime(0, 0, 0, $theMonth, 28, $theYear));
 	$events[] = $newEvent;
 ?>
-<div class="site-about">
+<div id="content-wrapper">
 	<?= Breadcrumbs::widget([
 		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 	]) ?>
@@ -110,4 +111,12 @@ $events = array();
 
 	</div><!-- /.body-content -->
 
+	<!-- this goes on every site file in p2made demos -->
+	<br><div class="alert alert-success" role="alert">
+		<ul class="fa-ul">
+			<li>
+				<?= FA::fw(FA::_CODE)->li()->size(FA::SIZE_LARGE) ?> <code><?= __FILE__ ?></code>
+			</li>
+		</ul>
+	</div>
 </div>

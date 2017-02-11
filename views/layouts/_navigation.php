@@ -42,6 +42,7 @@ use p2made\widgets\Alert;
 			['label' => 'Tables', 'url' => ['/site/page', 'view' => 'tables']],
 			['label' => 'Forms', 'url' => ['/site/page', 'view' => 'forms']],
 			['label' => 'Calendar', 'url' => ['/site/page', 'view' => 'calendar']],
+			['label' => 'Animate.css', 'url' => ['/site/page', 'view' => 'animate']],
 		]],
 		['label' => 'UI Elements', 'items' => [
 			['label' => 'Panels and Wells', 'url' => ['/site/page', 'view' => 'panels-wells']],
@@ -71,7 +72,6 @@ use p2made\widgets\Alert;
 		]],
 
 		['label' => '... in progress', 'items' => [
-			['label' => 'Animate.css', 'url' => ['/site/page', 'view' => 'animate']],
 		//	['label' => 'SweetAlert', 'url' => ['/site/page', 'view' => 'sweetalert']],
 		]],
 	];

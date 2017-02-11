@@ -31,7 +31,7 @@ $shortenedUrl = \p2made\helpers\IsGd::shortenUrl($sampleUrl);
 	]) ?>
 
 	<div class="jumbotron">
-		<h1>URL shortening with <a href="http://is.gd" target="_blank"><?= Html::encode($this->title) ?></a>...</h1>
+		<h1>URL shortening with <a href="http://is.gd" target="_blank"><?= Html::encode($this->title) ?> <?= FA::icon(FA::_EXTERNAL_LINK) ?></a>...</h1>
 	</div>
 
 	<div class="body-content">
@@ -63,6 +63,18 @@ $shortenedUrl = \p2made\helpers\IsGd::shortenUrl($sampleUrl);
 			</div>
 			<div class="col-lg-10">
 				<p>Save shortened links to your application database so they don't have to be shortened again.</p>
+			</div>
+			<div class="col-lg-2">
+			</div>
+			<div class="col-lg-10">
+				<div class="alert alert-warning">
+					<ul class="fa-ul">
+						<li>
+							<?= FA::fw(FA::_EXCLAMATION_TRIANGLE)->li()->size(FA::SIZE_LARGE) ?>
+							<code>is.gd</code> have started using SSL, which has broken the original implementation of this helper. As a temporary fix I've set <code>'verify_peer' => false</code> in the context options. Obviously this isn't a great plan, &amp; I'm exploring how to load a <code>cacert.pem</code> file from withing the bundle.
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 

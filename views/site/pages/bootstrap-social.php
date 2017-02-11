@@ -38,7 +38,7 @@ $sizes = [BSocial::SIZE_LARGE, BSocial::SIZE_SMALL, BSocial::SIZE_XSMALL];
  * End of demo data
  */
 ?>
-<div class="site-index">
+<div id="content-wrapper">
 	<?= Breadcrumbs::widget([
 		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
 	]) ?>

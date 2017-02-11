@@ -95,7 +95,7 @@ $wrappers = array(
 	<div class="jumbotron">
 		<h1><?= FA::i('flag') . ' ' . Html::encode($this->title) ?></h1>
 
-		<p>SVG flags &amp; CSS from <a href="https://lipis.github.io/flag-icon-css/" target="_blank">flag-icon-css<?= FA::icon(FA::_EXTERNAL_LINK) ?></a> as Yii 2 assets &amp; helpers.</p>
+		<p>SVG flags &amp; CSS from <a href="https://lipis.github.io/flag-icon-css/" target="_blank">flag-icon-css <?= FA::icon(FA::_EXTERNAL_LINK) ?></a> as Yii 2 assets &amp; helpers.</p>
 	</div>
 
 	<div class="body-content">

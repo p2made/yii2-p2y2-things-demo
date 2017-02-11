@@ -292,65 +292,18 @@ $this->params['breadcrumbs'][] = $this->title;
 
 		<section id="stacked">
 			<h2>Stacked Icons</h2>
-			<div class="row">
 				<div class="col-md-3 col-sm-4">
-					<div class="margin-bottom">
-						<?= FA::s(FA::_TWITTER, FA::_SQUARE_O, ['class' => 'fa-lg']) ?>
-						<code>FA::s(FA::_TWITTER, FA::_SQUARE_O)</code><br>
-
-						<?= FA::s(FA::vs(FA::_FLAG), FA::_CIRCLE, ['class' => 'fa-lg']) ?>
-						<code>FA::s(FA::vs(FA::_FLAG), FA::_CIRCLE)</code><br>
-
-						<?= FA::s(FA::vs(FA::_TERMINAL), FA::_SQUARE, ['class' => 'fa-lg']) ?>
-						<code>FA::s(FA::vs(FA::_TERMINAL), FA::_SQUARE)</code><br>
-					</div>
 				</div>
-				<div class="col-md-9 col-sm-8">
-					<p>
-						To stack multiple icons, use the <code>fa-stack</code> class on the parent, the <code>fa-stack-1x</code>
-						for the regularly sized icon, and <code>fa-stack-2x</code> for the larger icon. <code>fa-inverse</code>
-						can be used as an alternative icon color. You can even throw <a href="#larger">larger icon</a> classes on the parent
-						to get further control of sizing.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 col-sm-4">
-					<div class="margin-bottom">
-						<?= FA::is(
-							FA::i(FA::_BAN)->addCssClass('text-danger'),
-							FA::i(FA::_CAMERA),
-							['class' => 'fa-lg']
-						) ?>
-						<code>FA::is(FA::i(FA::_BAN)->addCssClass('text-danger'), FA::i(FA::_CAMERA))</code><br>
-					</div>
-				</div>
-				<div class="col-md-9 col-sm-8">
-					<div class="alert alert-success">
+				<div class="col-md-8 col-sm-7">
+					<div class="alert alert-warning">
 						<ul class="fa-ul">
 							<li>
-								<?= FA::fw(FA::_INFO_CIRCLE)->li()->size(FA::SIZE_LARGE) ?>
-								<em>p2made shortcut</em><br>
-								Shortcut for a stack with the larger icon on top. No longer so hacky thanks to updates in @rmrevin's FontAwesome.
+								<?= FA::fw(FA::_EXCLAMATION_TRIANGLE)->li()->size(FA::SIZE_LARGE) ?>
+								There's something broken in the stacked icons. I don't yet know whether it's in <code>rmrevin/yii2-fontawesome</code> or my wrapper. Stay tuned for a fix.
 							</li>
 						</ul>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 col-sm-4">
-					<div class="margin-bottom">
-						<?= FA::ban(FA::i(FA::_CAMERA), ['class' => 'fa-lg']) ?>
-						<code>FA::ban(FA::i(FA::_CAMERA))</code><br>
-					</div>
-				</div>
-				<div class="col-md-9 col-sm-8">
-					<p>
-						<em>p2made shortcut</em><br>
-						An even shorter version for the most common use of an inverted stack, a ban icon.
-					</p>
-				</div>
-			</div>
 		</section><!-- / Stacked Icons -->
 
 		<section id="bootstrap">
@@ -411,7 +364,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			</div>
 		</section><!-- / Bootstrap 3 Examples -->
 
-		<section id="basic">
+		<section id="currency">
 			<h2>Currency Extras</h2>
 			<div class="row">
 				<div class="col-md-3 col-sm-4">
@@ -439,7 +392,7 @@ $this->params['breadcrumbs'][] = $this->title;
 							<li>
 								<?= FA::fw(FA::_INFO_CIRCLE)->li()->size(FA::SIZE_LARGE) ?>
 								<em>p2made extra</em><br>
-								If you load my <code>FontAwesomeAsset</code> by using <code>P2CoreAsset</code>, then a some extra classes give country specific dollar icons. It's a bit of an experiment, the font isn't ideal, &amp; the resulting icons are wider than <code>fa-fw</code>, so <code>fw()</code> doesn't work well (&amp; is probably best avoided).
+								If you load my <code>FontAwesomeAsset</code> by using <code>P2CoreAsset</code>, then some extra classes give country specific dollar icons. It's a bit of an experiment, the font isn't ideal, &amp; the resulting icons are wider than <code>fa-fw</code>, so <code>fw()</code> doesn't work well (&amp; is probably best avoided).
 							</li>
 						</ul>
 					</div>
@@ -455,6 +408,7 @@ $this->params['breadcrumbs'][] = $this->title;
 				</div>
 			</div>
 		</section><!-- / Currency Extras -->
+
 	</div>
 
 	<!-- this goes on every site file in p2made demos -->
