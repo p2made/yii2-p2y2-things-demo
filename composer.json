@@ -24,7 +24,7 @@
 	"minimum-stability": "dev",
 
 	"require": {
-		"p2made/yii2-p2y2-things": "^1.16"
+		"p2made/yii2-p2y2-things": "^1.17"
 	},
 
 	"autoload": {
