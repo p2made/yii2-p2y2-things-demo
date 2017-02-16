@@ -314,4 +314,4 @@ $sizes = [BSocial::SIZE_LARGE, BSocial::SIZE_SMALL, BSocial::SIZE_XSMALL];
 			</li>
 		</ul>
 	</div>
-</div><!-- /#site-index -->
+</div><!-- /#content-wrapper -->

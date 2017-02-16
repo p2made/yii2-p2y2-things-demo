@@ -224,4 +224,4 @@ $wrappers = array(
 			</li>
 		</ul>
 	</div>
-</div><!-- /#site-index -->
+</div><!-- /#content-wrapper -->

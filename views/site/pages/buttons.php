@@ -35,6 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	</div>
 
 	<div class="body-content">
+
 		<div class="row">
 
 			<div class="col-lg-6">
@@ -210,6 +211,7 @@ $this->params['breadcrumbs'][] = $this->title;
 			</div>
 
 		</div>
+
 	</div><!-- /.body-content -->
 
 	<!-- this goes on every site file in p2made demos -->
