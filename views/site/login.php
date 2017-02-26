@@ -12,9 +12,7 @@
 use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
-use p2made\helpers\FA;
-
-// load assets...
+use p2m\helpers\FA;
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */

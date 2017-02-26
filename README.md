@@ -1,4 +1,4 @@
-P2Y2Things Demo v1.17.2
+P2Y2Things Demo v2.0.0
 ==========
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
@@ -12,7 +12,11 @@ A set of pages to demonstrate [`p2made/yii2-p2y2-things`](https://github.com/p2m
 
 It declares p2made/yii2-p2y2-things as a dependancy.
 
-*!!!* This theme still has lots of rough & unfinished bits. It's only been let out of the cage so I can begin using it in other projects.
+¡¡ IMPORTANT !!
+===============
+
+Version 2.0.0 of all my Yii2 add-ons marks a breaking change where I've shortened my namespaces.
+`p2made\rest\of\namespace` is now `p2m\rest\of\namespace`.
 
 Installation
 ------------
@@ -21,19 +25,19 @@ The preferred way to install P2Y2Things Demo is through [composer](http://getcom
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require --prefer-dist p2made/yii2-p2y2-things-demo "^1.15"
+composer require --prefer-dist p2made/yii2-p2y2-things-demo "^2.0"
 ```
 
 or
 
 ```
-php composer.phar require --prefer-dist p2made/yii2-p2y2-things-demo "^1.15"
+php composer.phar require --prefer-dist p2made/yii2-p2y2-things-demo "^2.0"
 ```
 
 Alternatively add:
 
 ```
-"p2made/yii2-p2y2-things-demo": "^1.15"
+"p2made/yii2-p2y2-things-demo": "^2.0"
 ```
 
 to the requires section of your `composer.json` file & P2Y2Things Demo will be installed next time you run `composer update`.
@@ -50,7 +54,7 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 		'view' => [
 			'theme' => [
 				'pathMap' => [
-					'@app/views' => '@vendor/p2made/yii2-p2y2-things-demo/views',
+					'@app/views' => '@vendor/p2m/yii2-p2y2-things-demo/views',
 				],
 			],
 		],

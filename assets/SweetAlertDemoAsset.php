@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace p2made\demo\assets;
+namespace p2m\demo\assets;
 
 class SweetAlertDemoAsset extends \yii\web\AssetBundle
 {
@@ -21,6 +21,6 @@ class SweetAlertDemoAsset extends \yii\web\AssetBundle
 
 	public $depends = [
 		'yii\web\YiiAsset',
-		'p2made\demo\assets\ThingsDemoAsset',
+		'p2m\demo\assets\ThingsDemoAsset',
 	];
 }

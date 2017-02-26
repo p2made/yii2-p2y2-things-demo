@@ -12,7 +12,7 @@
 use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
 use yii\bootstrap\ActiveForm;
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 //use yii\captcha\Captcha;
 
 // load assets...

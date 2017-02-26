@@ -11,10 +11,7 @@
 
 use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;
-use p2made\helpers\FA;
-
-// load assets...
-p2made\demo\assets\ThingsDemoAsset::register($this);
+use p2m\helpers\FA;
 
 /* @var $this yii\web\View */
 

@@ -9,7 +9,7 @@
  * @license MIT
  */
 
-namespace p2made\demo\assets;
+namespace p2m\demo\assets;
 
 class DataTablesDemoAsset extends \yii\web\AssetBundle
 {
