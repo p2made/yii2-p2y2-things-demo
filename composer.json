@@ -20,11 +20,11 @@
 		"source": "https://github.com/p2made/yii2-p2y2-things-demo"
 	},
 
-	"version": "2.7.2",
+	"version": "2.8.0",
 	"minimum-stability": "dev",
 
 	"require": {
-		"p2made/yii2-p2y2-things": "^2.5"
+		"p2made/yii2-p2y2-things": "^2.8"
 	},
 
 	"autoload": {
