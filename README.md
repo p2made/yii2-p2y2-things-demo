@@ -6,7 +6,6 @@ P2Y2Things Demo v2.8.0
 [![Monthly Downloads](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/d/monthly)](https://packagist.org/packages/p2made/yii2-p2y2-things)
 [![Latest Stable Version](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/v/stable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
 [![Latest Unstable Version](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/v/unstable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
-[![Dependency Status](https://www.versioneye.com/user/projects/56e14929df573d0048dafebb/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56e14929df573d0048dafebb)
 
 ---
 
