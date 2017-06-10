@@ -5,6 +5,7 @@ P2Y2Things Demo v2.8.0
 [![Total Downloads](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/downloads)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
 [![Latest Stable Version](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/v/stable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
 [![Latest Unstable Version](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/v/unstable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Dependency Status](https://www.versioneye.com/user/projects/56e14929df573d0048dafebb/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56e14929df573d0048dafebb)
 
 ---
 
@@ -25,19 +26,19 @@ The preferred way to install P2Y2Things Demo is through [composer](http://getcom
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require --prefer-dist p2made/yii2-p2y2-things-demo "^2.5"
+composer require --prefer-dist p2made/yii2-p2y2-things-demo "^2.8"
 ```
 
 or
 
 ```
-php composer.phar require --prefer-dist p2made/yii2-p2y2-things-demo "^2.5"
+php composer.phar require --prefer-dist p2made/yii2-p2y2-things-demo "^2.8"
 ```
 
 Alternatively add:
 
 ```
-"p2made/yii2-p2y2-things-demo": "^2.5"
+"p2made/yii2-p2y2-things-demo": "^2.8"
 ```
 
 to the requires section of your `composer.json` file & P2Y2Things Demo will be installed next time you run `composer update`.
@@ -108,6 +109,3 @@ P2Y2Things Demo uses [P2Y2Things](https://github.com/p2made/yii2-p2y2-things) wh
 **DO NOT** modify the views in the  `views/` folder. Your changes will be lost next time you run `composer update`.
 
 You can copy elements from these examples into your own views.
-
----
-[![Dependency Status](https://www.versioneye.com/user/projects/56e14929df573d0048dafebb/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56e14929df573d0048dafebb)
