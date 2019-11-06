@@ -1,5 +1,4 @@
-P2Y2Things Demo v2.8.1
-==========
+# P2Y2Things Demo v4.0.0-dev
 
 [![License](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
 [![Total Downloads](https://poser.pugx.org/p2made/yii2-p2y2-things-demo/downloads)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
@@ -12,12 +11,6 @@ P2Y2Things Demo v2.8.1
 A set of pages to demonstrate [`p2made/yii2-p2y2-things`](https://github.com/p2made/yii2-p2y2-things), bundled as a theme.
 
 It declares p2made/yii2-p2y2-things as a dependancy.
-
-¡¡ IMPORTANT !!
-===============
-
-Version 2.0.0 of all my Yii2 add-ons marks a breaking change where I've shortened my namespaces.
-`p2made\rest\of\namespace` is now `p2m\rest\of\namespace`.
 
 Installation
 ------------
